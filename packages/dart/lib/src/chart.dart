@@ -1,6 +1,7 @@
 import 'package:meta/meta.dart';
 
 import 'ayanamsa.dart';
+import 'divisional.dart';
 import 'house_system.dart';
 import 'planet.dart';
 
@@ -52,9 +53,13 @@ class Chart {
     required this.positions,
     required this.ayanamsaValue,
     required this.engineVersion,
+    this.varga = Varga.d1,
   });
 
   final BirthData input;
+
+  /// Which divisional chart this is. D1 is the rasi chart itself.
+  final Varga varga;
 
   /// Sidereal longitude of the ascendant in degrees.
   final double ascendant;
@@ -75,12 +80,14 @@ class Chart {
 
   Map<String, Object?> toJson() => {
         'input': input.toJson(),
+        'varga': varga.name,
         'ascendant': ascendant,
         'ascendantSign': ascendantSign,
         'houseCusps': houseCusps,
         'positions': {
           for (final graha in Graha.values)
-            if (positions[graha] case final position?) graha.name: position.toJson(),
+            if (positions[graha] case final position?)
+              graha.name: position.toJson(),
         },
         'ayanamsaValue': ayanamsaValue,
         'engineVersion': engineVersion,

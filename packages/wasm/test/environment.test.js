@@ -1,7 +1,10 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { loadEngine, ENGINE_VERSION } from '../src/index.ts';
+// Imports the built output rather than the TypeScript source: Node cannot load
+// .ts directly, and testing dist/ is what consumers actually get. `npm test`
+// builds first.
+import { loadEngine, ENGINE_VERSION } from '../dist/index.js';
 
 test('engine version follows semantic versioning', () => {
   assert.match(ENGINE_VERSION, /^\d+\.\d+\.\d+/);
