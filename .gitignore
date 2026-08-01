@@ -1,0 +1,38 @@
+# Native build output
+build/
+native/vendor/
+native/out/
+*.o
+*.a
+*.so
+*.dylib
+*.wasm
+*.xcframework
+
+# Ephemeris data files (fetched, not committed)
+*.se1
+*.se2
+ephe/
+
+# Dart
+.dart_tool/
+.packages
+pubspec.lock
+doc/api/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# Editors
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Test artefacts
+coverage/
+*.lcov
+test/.test_coverage.dart
