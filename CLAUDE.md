@@ -140,9 +140,25 @@ python3 test/validate_vectors.py
 
 ## Current state
 
-Scaffolding and interfaces are complete; the native build pipeline is not. `fetch_swisseph.sh` and
-the build scripts are stubs with documented TODOs. The first real task is getting Swiss Ephemeris
-compiling for all targets and proving FFI and WASM agree on the test vectors — that is the spike
-that de-risks the whole project.
+The engine splits into two halves at `RawEphemeris`, and only one of them exists.
 
-Defaults: Lahiri (Chitrapaksha) ayanamsa, whole-sign houses, mean node.
+**Derivation half — implemented and tested in Dart.** Everything downstream of raw longitudes:
+signs, nakshatras and padas, dignity, combustion, whole-sign and equal houses, the seven vargas,
+the full Vimshottari tree, and tithi/yoga/karana. Pure arithmetic, no native code, 170 tests.
+`assembleChart(BirthData, RawEphemeris)` is the entry point.
+
+**Ephemeris half — not started.** Planetary longitudes, the ayanamsa value, the ascendant, quadrant
+cusps, and sunrise/sunset all still have to come from Swiss Ephemeris. `fetch_swisseph.sh` and the
+three build scripts are stubs with documented TODOs, so nothing can produce a real chart yet. The
+`JyotishEngine` interface has no implementation: an FFI class will implement it by calling Swiss
+Ephemeris to fill a `RawEphemeris` and handing that to the assembler.
+
+**The WASM package is still empty.** The derivation half exists only in Dart. Cross-platform
+equality is not merely unverified, it is currently impossible — the TypeScript side has nothing to
+compare against. Porting the derivation layer, or compiling the Dart to JS, is an open decision.
+
+The remaining first task is unchanged: get Swiss Ephemeris compiling for all targets and prove FFI
+and WASM agree on the test vectors. All seven vectors still have `verifiedAgainst: null`.
+
+Defaults: Lahiri (Chitrapaksha) ayanamsa, whole-sign houses, mean node. Vimshottari years are
+365.25 days (`vimshottariYearDays`) — that constant defines every dasha boundary the engine emits.

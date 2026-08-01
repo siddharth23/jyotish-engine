@@ -27,14 +27,16 @@ class DashaPeriod {
 
   final List<DashaPeriod> children;
 
-  bool containsDate(DateTime date) => !date.isBefore(start) && date.isBefore(end);
+  bool containsDate(DateTime date) =>
+      !date.isBefore(start) && date.isBefore(end);
 
   Map<String, Object?> toJson() => {
         'lord': lord.name,
         'start': start.toUtc().toIso8601String(),
         'end': end.toUtc().toIso8601String(),
         'level': level,
-        if (children.isNotEmpty) 'children': [for (final c in children) c.toJson()],
+        if (children.isNotEmpty)
+          'children': [for (final c in children) c.toJson()],
       };
 }
 
