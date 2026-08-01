@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "name": "Format example",
+  "description": "Demonstrates the rule-set format. NOT an astrological reference \u2014 do not ship this.",
+  "source": "Illustrative only",
+  "rules": [
+    {
+      "id": "example.saturn_in_tenth",
+      "source": "Illustrative only",
+      "strength": 1.0,
+      "conditions": [
+        {
+          "chart": "d1",
+          "subject": "positions.saturn.house",
+          "operator": "equals",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "example.exalted_jupiter",
+      "source": "Illustrative only",
+      "strength": 1.0,
+      "conditions": [
+        {
+          "chart": "d1",
+          "subject": "positions.jupiter.dignity",
+          "operator": "equals",
+          "value": "exalted"
+        }
+      ]
+    }
+  ]
+}
