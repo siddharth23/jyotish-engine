@@ -1,0 +1,108 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  licence-headers:
+    name: Licence and attribution
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: LICENSE is present and is AGPL-3.0
+        run: |
+          test -f LICENSE || { echo "LICENSE missing"; exit 1; }
+          grep -q "GNU AFFERO GENERAL PUBLIC LICENSE" LICENSE \
+            || { echo "LICENSE is not AGPL-3.0"; exit 1; }
+      - name: NOTICE lists required attributions
+        run: |
+          for term in "Swiss Ephemeris" "GeoNames" "tzdata"; do
+            grep -qi "$term" NOTICE || { echo "NOTICE missing: $term"; exit 1; }
+          done
+
+  no-server-side-affordances:
+    name: No server-side affordances
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject server framework dependencies
+        run: |
+          # This package must never become trivially runnable on a server.
+          # See docs/AGPL-BOUNDARY.md.
+          if grep -rniE "\b(express|fastify|koa|hapi|flask|django|gin-gonic)\b" \
+               --include="package.json" --include="pubspec.yaml" . ; then
+            echo "::error::Server framework dependency found. See docs/AGPL-BOUNDARY.md"
+            exit 1
+          fi
+          echo "No server framework dependencies."
+
+  dart:
+    name: Dart package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - name: Install dependencies
+        working-directory: packages/dart
+        run: dart pub get
+      - name: Verify formatting
+        working-directory: packages/dart
+        run: dart format --output=none --set-exit-if-changed .
+      - name: Analyse
+        working-directory: packages/dart
+        run: dart analyze --fatal-infos
+      - name: Test
+        working-directory: packages/dart
+        run: dart test
+
+  wasm:
+    name: WASM wrapper
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        working-directory: packages/wasm
+        run: npm ci || npm install
+      - name: Lint
+        working-directory: packages/wasm
+        run: npm run lint --if-present
+      - name: Test
+        working-directory: packages/wasm
+        run: npm test --if-present
+
+  vectors:
+    name: Reference vectors are well-formed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate vector file
+        run: python3 test/validate_vectors.py
+
+  # Enabled once the native build pipeline lands. Cross-platform equality between
+  # the Dart and WASM builds is the single most important guarantee this package makes.
+  # cross-platform-equality:
+  #   name: Dart and WASM produce identical output
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - run: ./native/fetch_swisseph.sh
+  #     - run: ./native/build_wasm.sh
+  #     - run: ./scripts/compare_outputs.sh
