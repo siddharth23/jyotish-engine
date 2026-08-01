@@ -1,7 +1,7 @@
 name: jyotish_engine
 description: Sidereal (Vedic) astrological calculations via Swiss Ephemeris FFI bindings.
 version: 0.1.0
-repository: https://github.com/YOUR-GITHUB-USERNAME/jyotish-engine
+repository: https://github.com/sidkalaapcoa/jyotish-engine
 
 environment:
   sdk: ^3.4.0

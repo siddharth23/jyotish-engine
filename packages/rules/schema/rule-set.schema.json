@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/YOUR-GITHUB-USERNAME/jyotish-engine/blob/main/packages/rules/schema/rule-set.schema.json",
+  "$id": "https://github.com/sidkalaapcoa/jyotish-engine/blob/main/packages/rules/schema/rule-set.schema.json",
   "title": "Jyotish rule set",
   "description": "A versioned collection of predicates evaluated against a computed chart. Contains identifiers and conditions only; interpretation text belongs in the consuming application.",
   "type": "object",

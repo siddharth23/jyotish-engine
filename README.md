@@ -8,7 +8,7 @@ evaluator.
 astrological facts and evaluates externally supplied rule sets. It does not contain
 interpretation content, product logic, or anything specific to a particular application.
 
-[![CI](https://github.com/YOUR-GITHUB-USERNAME/jyotish-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-GITHUB-USERNAME/jyotish-engine/actions/workflows/ci.yml)
+[![CI](https://github.com/sidkalaapcoa/jyotish-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/sidkalaapcoa/jyotish-engine/actions/workflows/ci.yml)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 
 ---

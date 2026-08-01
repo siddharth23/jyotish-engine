@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Security vulnerability
-    url: https://github.com/YOUR-GITHUB-USERNAME/jyotish-engine/security/advisories/new
+    url: https://github.com/sidkalaapcoa/jyotish-engine/security/advisories/new
     about: Report privately. Do not open a public issue.
