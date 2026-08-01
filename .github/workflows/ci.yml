@@ -18,7 +18,7 @@ jobs:
     name: Licence and attribution
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: LICENSE is present and is AGPL-3.0
         run: |
           test -f LICENSE || { echo "LICENSE missing"; exit 1; }
@@ -34,7 +34,7 @@ jobs:
     name: No server-side affordances
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Reject server framework dependencies
         run: |
           # This package must never become trivially runnable on a server.
@@ -50,7 +50,7 @@ jobs:
     name: Dart package
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dart-lang/setup-dart@v1
         with:
           sdk: stable
@@ -71,7 +71,7 @@ jobs:
     name: WASM wrapper
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -89,7 +89,7 @@ jobs:
     name: Reference vectors are well-formed
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -102,7 +102,7 @@ jobs:
   #   name: Dart and WASM produce identical output
   #   runs-on: ubuntu-latest
   #   steps:
-  #     - uses: actions/checkout@v4
+  #     - uses: actions/checkout@v7
   #     - run: ./native/fetch_swisseph.sh
   #     - run: ./native/build_wasm.sh
   #     - run: ./scripts/compare_outputs.sh
