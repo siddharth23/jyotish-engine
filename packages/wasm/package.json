@@ -1,0 +1,29 @@
+{
+  "name": "@jyotish/engine-wasm",
+  "version": "0.1.0",
+  "description": "Sidereal (Vedic) astrological calculations via a WebAssembly build of Swiss Ephemeris. Browser only.",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-GITHUB-USERNAME/jyotish-engine.git",
+    "directory": "packages/wasm"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/index.js",
+  "files": ["dist", "README.md"],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/",
+    "lint": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0"
+  },
+  "keywords": ["astrology", "vedic", "jyotish", "swiss-ephemeris", "wasm"]
+}
