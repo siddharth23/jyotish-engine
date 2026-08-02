@@ -15,7 +15,19 @@
  * @packageDocumentation
  */
 
-export const ENGINE_VERSION = '0.1.0';
+/**
+ * The engine contract this build targets.
+ *
+ * **Must equal `engineVersion` in packages/dart.** The two builds have to produce
+ * identical output for the same inputs, and consuming applications cache on this
+ * value, so a mismatch would let a browser-computed chart disagree with the same
+ * person's chart computed on a phone. CI fails when they diverge.
+ *
+ * Note that this package computes nothing yet — `loadEngine` throws, and no
+ * WebAssembly binary is built. The version records the contract targeted, not work
+ * completed.
+ */
+export const ENGINE_VERSION = '0.2.0';
 
 export type Ayanamsa = 'lahiri' | 'raman' | 'krishnamurti' | 'faganBradley';
 export type HouseSystem = 'wholeSign' | 'equal' | 'placidus' | 'koch';

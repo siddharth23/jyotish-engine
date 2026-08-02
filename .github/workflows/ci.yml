@@ -30,6 +30,33 @@ jobs:
             grep -qi "$term" NOTICE || { echo "NOTICE missing: $term"; exit 1; }
           done
 
+  engine-version-parity:
+    name: Engine version parity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Dart and WASM declare the same engine version
+        run: |
+          # The two builds must produce identical output for the same inputs, and
+          # consuming applications cache on this value. Silent drift would let an
+          # astrologer's browser-computed chart disagree with the customer's
+          # phone-computed one -- the exact failure the golden-master vectors exist
+          # to catch, but invisible until someone compares two reports.
+          dart_version=$(sed -n "s/^const String engineVersion = '\(.*\)';$/\1/p" \
+            packages/dart/lib/src/version.dart)
+          wasm_version=$(sed -n "s/^export const ENGINE_VERSION = '\(.*\)';$/\1/p" \
+            packages/wasm/src/index.ts)
+          echo "dart: ${dart_version:-<unparsed>}"
+          echo "wasm: ${wasm_version:-<unparsed>}"
+          if [ -z "$dart_version" ] || [ -z "$wasm_version" ]; then
+            echo "Could not parse a version; the declaration format changed." >&2
+            exit 1
+          fi
+          if [ "$dart_version" != "$wasm_version" ]; then
+            echo "Engine versions diverge. Bump both together." >&2
+            exit 1
+          fi
+
   no-server-side-affordances:
     name: No server-side affordances
     runs-on: ubuntu-latest
