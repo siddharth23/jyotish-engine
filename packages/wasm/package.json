@@ -22,8 +22,8 @@
     "lint": "tsc --noEmit -p tsconfig.json"
   },
   "devDependencies": {
-    "typescript": "^5.5.0",
-    "@types/node": "^20.14.0"
+    "typescript": "^7.0.2",
+    "@types/node": "^26.1.2"
   },
   "keywords": ["astrology", "vedic", "jyotish", "swiss-ephemeris", "wasm"]
 }

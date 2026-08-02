@@ -5,7 +5,7 @@
 ///
 /// Licensed under AGPL-3.0-only. This code must only be executed in client-side
 /// contexts. See `docs/AGPL-BOUNDARY.md` in the repository root before integrating.
-library jyotish_engine;
+library;
 
 export 'src/ayanamsa.dart';
 export 'src/chart.dart';
