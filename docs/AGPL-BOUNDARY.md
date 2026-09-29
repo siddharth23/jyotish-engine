@@ -37,7 +37,7 @@ AGPL-3.0. It executes only in contexts the end user controls:
 | Context | Mechanism | Runs where |
 |---|---|---|
 | Mobile application | Dart FFI, statically linked | On the user's device |
-| Web console | WebAssembly, loaded in the page | In the user's browser |
+| Website | WebAssembly in a Web Worker (`packages/wasm/dist/worker.js`), served as separate files | In the user's browser |
 
 Consuming applications compute charts locally and transmit **results** — plain JSON data —
 to their own backend. Data is not a derivative work of the program that produced it.
