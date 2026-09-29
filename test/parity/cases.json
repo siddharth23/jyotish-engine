@@ -1,0 +1,4225 @@
+{
+ "$comment": "Raw ephemeris inputs for the Dart/TypeScript derivation parity check. Synthetic values, not real births.",
+ "cases": [
+  {
+   "id": "case-000",
+   "birth": {
+    "utcDateTime": "1843-11-13T05:55:41.000Z",
+    "latitude": 37.9158,
+    "longitude": 151.0159,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 86.84361630580565,
+    "ayanamsaValue": 24.488776318039,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 120,
+      "latitude": 3.247380739183834,
+      "speed": 13.204397417242284
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 190.57527395056218,
+      "latitude": 2.1318903922395993,
+      "speed": 1.8494617376983906
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 340.8645094741151,
+      "latitude": -1.3482227903038613,
+      "speed": 11.721028624960903
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 171.7727080987803,
+      "latitude": -0.9287621898105014,
+      "speed": 8.118171781157173
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": 0.872255884364864,
+      "speed": 9.533534823595161
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 19.26850073094048,
+      "latitude": 0.7637019918752799,
+      "speed": 2.2361058831623897
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 322.6187238578113,
+      "latitude": -4.822721737814572,
+      "speed": 0.41482871869011206
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 79.95851934848646,
+      "latitude": -3.8233039780925204,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-001",
+   "birth": {
+    "utcDateTime": "1970-08-22T05:54:58.000Z",
+    "latitude": -48.4401,
+    "longitude": -115.4223,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 40,
+    "ayanamsaValue": 20.152252068283047,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 71.58378626584448,
+      "latitude": 4.874338601895609,
+      "speed": 10.133594348311295
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 120,
+      "latitude": -3.9293164673244227,
+      "speed": 12.174366837956132
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 351.4882863208491,
+      "latitude": -2.1960515192049215,
+      "speed": -0.1466884484286659
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 235.60034979924504,
+      "latitude": 1.7141986188829303,
+      "speed": 6.244267331655597
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 30.042579334932636,
+      "latitude": -2.2003048871432,
+      "speed": 6.240641870414606
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": 2.3251196807053898,
+      "speed": 13.162589889268494
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 0.3901945382880623,
+      "speed": 1.2580174628421368
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 172.2571191200455,
+      "latitude": 2.3225942265516952,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-002",
+   "birth": {
+    "utcDateTime": "1932-12-27T07:06:06.000Z",
+    "latitude": 35.0756,
+    "longitude": -8.3222,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 154.28571428571428,
+    "ayanamsaValue": 23.73308205186072,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 0.41460106952126985,
+      "latitude": 2.7339684397727604,
+      "speed": 1.9667917753987267
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 240,
+      "latitude": 1.927695645071445,
+      "speed": 13.360065047011702
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 0.74634796723437,
+      "speed": 4.503534087936029
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 23.46234805996328,
+      "latitude": -3.74399826588974,
+      "speed": 8.664846592610518
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 96.84757146765817,
+      "latitude": -2.636725127325632,
+      "speed": 8.995856853785908
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 25.057224310507973,
+      "latitude": -0.22413124309386667,
+      "speed": 13.259280445393612
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 137.46740338229105,
+      "latitude": 1.9416085661081723,
+      "speed": -0.8210742261185113
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 347.32905577610444,
+      "latitude": 3.7298647400043787,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-003",
+   "birth": {
+    "utcDateTime": "2239-02-17T20:38:34.000Z",
+    "latitude": -27.3905,
+    "longitude": 112.3942,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 326.80450782245845,
+    "ayanamsaValue": 22.236092967848865,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 353.36059858739793,
+      "latitude": -0.8255756585970762,
+      "speed": 12.416080810625527
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 120,
+      "latitude": -2.8328835732243007,
+      "speed": 10.31087492811848
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 118.0161892774233,
+      "latitude": -0.2844940598542216,
+      "speed": 12.158872837973888
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 37.89671949956399,
+      "latitude": -4.070199390476122,
+      "speed": 7.9181073328777885
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 218.64836098497378,
+      "latitude": 3.3628828441978715,
+      "speed": 7.0554555773621
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 240,
+      "latitude": 4.557474704774156,
+      "speed": 12.680742268067135
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 82.19512602077832,
+      "latitude": -0.16863525785461775,
+      "speed": 5.817984706302049
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 10.414011496740198,
+      "latitude": -2.0016615695237396,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-004",
+   "birth": {
+    "utcDateTime": "1849-11-10T10:30:55.000Z",
+    "latitude": -30.906,
+    "longitude": 80.6807,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 121.18266771366292,
+    "ayanamsaValue": 25.5483879736376,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 120,
+      "latitude": -1.455820525447049,
+      "speed": 11.088676201540851
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 227.37095344289773,
+      "latitude": 2.7152133329043258,
+      "speed": 4.824834575090097
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 235.65166094074345,
+      "latitude": 1.2962006650392253,
+      "speed": 4.997011544903895
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 30,
+      "latitude": -4.038763661106735,
+      "speed": 6.5874256012964825
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 89.82874781409052,
+      "latitude": 0.4331043803811685,
+      "speed": 4.52410558491777
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 352.74453922472884,
+      "latitude": -3.3268684305084717,
+      "speed": 12.063922166569233
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 161.57050244798546,
+      "latitude": 1.242097782100549,
+      "speed": 10.7918107016378
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 87.47723706322184,
+      "latitude": 1.9077479915002948,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-005",
+   "birth": {
+    "utcDateTime": "2024-10-27T12:46:15.000Z",
+    "latitude": 33.0168,
+    "longitude": -142.9007,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 98.81464083619946,
+    "ayanamsaValue": 20.739558420817385,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 240,
+      "latitude": 1.126543221608502,
+      "speed": 11.272594477515481
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -1.4475825202143833,
+      "speed": 4.637762230940191
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": 3.194156331095554,
+      "speed": 9.463058373752032
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 309.59581836448535,
+      "latitude": -0.6691464749957294,
+      "speed": 6.107683608000522
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 183.92152065601536,
+      "latitude": -0.419851674466976,
+      "speed": 12.33243826369007
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 240.3717233518909,
+      "latitude": 1.9664263780265507,
+      "speed": 4.009389830747684
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 207.61708824007508,
+      "latitude": 3.4883721934908998,
+      "speed": 1.8538682112978724
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 294.93105050619914,
+      "latitude": -4.814406024197712,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-006",
+   "birth": {
+    "utcDateTime": "2152-06-17T03:06:53.000Z",
+    "latitude": 29.145,
+    "longitude": 164.7317,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 147.38941787711946,
+    "ayanamsaValue": 24.26522287212971,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 15.220226281316114,
+      "latitude": 1.0902628211779186,
+      "speed": 11.914686375591016
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 42.84710256540793,
+      "latitude": -1.6806559265085985,
+      "speed": 12.649791569974697
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 214.02513546060783,
+      "latitude": -3.2589085826510136,
+      "speed": 3.3971100279111894
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 120,
+      "latitude": -0.8362262696008971,
+      "speed": 5.722804418016171
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 250.58457001626212,
+      "latitude": -4.456874729993237,
+      "speed": 11.473423441820467
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 114.71740741096379,
+      "latitude": 3.3651379862908772,
+      "speed": 9.730386020879726
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -3.706423471020458,
+      "speed": 5.083532010682393
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 172.34049012776055,
+      "latitude": -4.11057655940305,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-007",
+   "birth": {
+    "utcDateTime": "2198-05-04T04:05:24.000Z",
+    "latitude": 26.1038,
+    "longitude": 47.8137,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 62.908763326775684,
+    "ayanamsaValue": 25.2724138008334,
+    "houseCusps": [
+     62.908763326775684,
+     90.43319642840392,
+     122.79421549472694,
+     156.36682297058636,
+     179.2426240673727,
+     210.9337360161219,
+     240.85231119180457,
+     266.1831491046739,
+     299.6447949372739,
+     333.4149239751214,
+     10.203860998892878,
+     35.82262713626869
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 95.36633510311984,
+      "latitude": 3.8134629972024943,
+      "speed": 9.447253311697272
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 210.08906176045394,
+      "latitude": -4.614700506725776,
+      "speed": -0.6303375010011455
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 253.2992911559876,
+      "latitude": -4.004522140579314,
+      "speed": 5.304271190766135
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 261.37156952561395,
+      "latitude": -3.722511358050258,
+      "speed": 2.904615507842207
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 53.42734715545096,
+      "latitude": -4.200843605747386,
+      "speed": -0.3580075627405662
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 154.5844164321827,
+      "latitude": 4.322746265611194,
+      "speed": 10.492676151493542
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 306.2115956731983,
+      "latitude": 3.2773514785576623,
+      "speed": 0.7591427965350177
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 352.86479709389477,
+      "latitude": -1.2643662138908573,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-008",
+   "birth": {
+    "utcDateTime": "2069-01-22T09:03:55.000Z",
+    "latitude": -16.567,
+    "longitude": 37.9145,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 145.20959375854056,
+    "ayanamsaValue": 25.79008188300203,
+    "houseCusps": [
+     145.20959375854056,
+     172.43164842673048,
+     200.72497229690964,
+     236.36936951432247,
+     266.2889192332874,
+     287.6722867891206,
+     321.9185128665846,
+     357.8496924968019,
+     30.0814921382821,
+     52.570461102394574,
+     89.92290639952842,
+     114.84248918657687
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 129.80934380732097,
+      "latitude": 3.0493761219872084,
+      "speed": 8.479862858629078
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 47.98870271151413,
+      "latitude": 1.3093858911987581,
+      "speed": 10.904240172153687
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 235.61727523464185,
+      "latitude": 1.881430358904134,
+      "speed": 3.444146617940092
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 359.9999999,
+      "latitude": 3.91354357214081,
+      "speed": 5.544169137592657
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 243.6200969554369,
+      "latitude": 4.167375847785538,
+      "speed": 4.567299878761123
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 238.07982297928532,
+      "latitude": 0.1368723355007404,
+      "speed": 8.849267942622761
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 129.0648150443971,
+      "latitude": 1.6468202104049166,
+      "speed": 10.35625565045085
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 120,
+      "latitude": -3.324135478955923,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-009",
+   "birth": {
+    "utcDateTime": "2180-09-12T17:45:52.000Z",
+    "latitude": -36.6308,
+    "longitude": 159.1854,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 318.0969638511467,
+    "ayanamsaValue": 25.696773438482083,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 111.12241478375543,
+      "latitude": -1.4708676469063087,
+      "speed": 11.416885612040522
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 209.09795263899426,
+      "latitude": 4.852262779593241,
+      "speed": 5.711929220841078
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 154.56793744284101,
+      "latitude": -1.516728650503223,
+      "speed": 12.76552360583624
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": -1.0964080598159534,
+      "speed": 0.20093558090728258
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 66.65437817803219,
+      "latitude": -3.6509292121391415,
+      "speed": 3.3492326844441234
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 194.87322740222447,
+      "latitude": 2.2823272174844336,
+      "speed": 3.9079846669713705
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 120,
+      "latitude": -4.944497913724612,
+      "speed": 11.279373356148902
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 295.56513594340106,
+      "latitude": 0.9581755924904742,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-010",
+   "birth": {
+    "utcDateTime": "2389-06-08T19:38:56.000Z",
+    "latitude": -7.3351,
+    "longitude": 23.9913,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 278.0659824851107,
+    "ayanamsaValue": 24.28619914270486,
+    "houseCusps": [
+     278.0659824851107,
+     307.71507829631616,
+     335.69600734916907,
+     13.326394075274152,
+     33.415305848010235,
+     68.70227860824224,
+     98.19618707075614,
+     133.2197950997935,
+     155.75620749241443,
+     188.20720299843754,
+     214.91390236420852,
+     255.81107201468228
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 337.927616164348,
+      "latitude": 4.704178111994064,
+      "speed": 13.828124731727494
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 230.27662594262256,
+      "latitude": -0.09750653524410868,
+      "speed": 0.9949149656161824
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 9.741661675812967,
+      "latitude": 1.5996166394479392,
+      "speed": 8.240021472551307
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 7.664310456527614,
+      "latitude": 1.7993590161137902,
+      "speed": 3.285088357174721
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 64.00106164356411,
+      "latitude": -3.1679348857373455,
+      "speed": 13.175390157500463
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -0.33167914531647025,
+      "speed": 2.156917862862412
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 162.201821045134,
+      "latitude": 2.421808717933313,
+      "speed": 1.5913408250820549
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 45.94449395376,
+      "latitude": 3.504073451327015,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-011",
+   "birth": {
+    "utcDateTime": "2304-04-11T04:10:24.000Z",
+    "latitude": -37.433,
+    "longitude": -84.1585,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 102.38123960219102,
+    "ayanamsaValue": 23.42866017979025,
+    "houseCusps": [
+     102.38123960219102,
+     139.73483687085442,
+     163.9418433846278,
+     196.55925257012098,
+     220.05958557199176,
+     253.12387033434726,
+     280.77340258129954,
+     307.91333179931536,
+     346.4378452321743,
+     12.893942994313477,
+     49.938659716844825,
+     75.39775387919849
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 300.28655512151255,
+      "latitude": 4.369367008772118,
+      "speed": 4.777759819404404
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 10.596359569741693,
+      "latitude": 0.7896402895114294,
+      "speed": 10.025549948740135
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 21.174304450413906,
+      "latitude": 2.1587173304173195,
+      "speed": 9.89212992969208
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 262.6987099680783,
+      "latitude": 3.0774669216841577,
+      "speed": -0.7946419904208537
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 241.4280407947134,
+      "latitude": 4.955582976589646,
+      "speed": 10.263180189353312
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 20.23601105792813,
+      "latitude": -3.0046811301989695,
+      "speed": 2.342825942552628
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 62.302784663447575,
+      "latitude": 2.8176128098286233,
+      "speed": 9.95423181402154
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 241.04971114650817,
+      "latitude": -4.842033357289347,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-012",
+   "birth": {
+    "utcDateTime": "2282-01-21T04:08:31.000Z",
+    "latitude": -16.2692,
+    "longitude": -74.264,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 167.24384641154845,
+    "ayanamsaValue": 24.771320860509398,
+    "houseCusps": [
+     167.24384641154845,
+     191.2263690801539,
+     226.78327281639739,
+     258.36958919428076,
+     293.2553615251103,
+     314.9483315219835,
+     343.6359845133438,
+     12.88851297886373,
+     41.76978830223487,
+     84.82436085325003,
+     103.61907003417105,
+     131.54466308495375
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 348.65457505163084,
+      "latitude": 3.673526293488953,
+      "speed": 10.395453466707334
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 94.78714937294312,
+      "latitude": 3.662186876463032,
+      "speed": 10.8316251548656
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 295.14264261248576,
+      "latitude": 2.6655157568035435,
+      "speed": 12.079422525959757
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 302.6602413515831,
+      "latitude": 2.494017604243137,
+      "speed": 9.62065837361612
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 217.98302765197406,
+      "latitude": 4.456183469882047,
+      "speed": 4.23618149362907
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 27.6869086308779,
+      "latitude": -1.4809367225491643,
+      "speed": 0.36113202722181525
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 359.9999999,
+      "latitude": 1.040590306361561,
+      "speed": 12.696516272577352
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 271.56752183695,
+      "latitude": 0.9698387843130511,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-013",
+   "birth": {
+    "utcDateTime": "2384-01-08T06:05:13.000Z",
+    "latitude": 32.9536,
+    "longitude": -41.5356,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 276.9346118898654,
+    "ayanamsaValue": 23.409614443032886,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 144.31212906408024,
+      "latitude": 3.8153301084477533,
+      "speed": 9.76533695995746
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 134.51801107025554,
+      "latitude": 3.3403027782023162,
+      "speed": 1.2146313823486166
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 65.37676336560249,
+      "latitude": -0.7413334340311293,
+      "speed": 1.2693029989754097
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": -2.4658870519269427,
+      "speed": 3.419090349832029
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 46.96692791057075,
+      "latitude": -2.374126226877066,
+      "speed": 1.0564607011132003
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 357.2607414459682,
+      "latitude": -3.686060072808963,
+      "speed": 7.061874525443498
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -4.553805002358292,
+      "speed": 7.857259637306809
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 67.30218168269504,
+      "latitude": 4.391293423303511,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-014",
+   "birth": {
+    "utcDateTime": "1887-03-23T12:20:39.000Z",
+    "latitude": 26.5006,
+    "longitude": -89.2823,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 40,
+    "ayanamsaValue": 25.010594375556757,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 309.09085128037293,
+      "latitude": 2.8501261970637257,
+      "speed": 6.820095868784805
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 62.13147864672885,
+      "latitude": -0.818800996034657,
+      "speed": 3.5331141951503344
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 157.74788461716733,
+      "latitude": 3.114730349220272,
+      "speed": 7.223800149408165
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 280.9062062112293,
+      "latitude": 0.22253638253148988,
+      "speed": -0.9319962187862587
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 27.722754229789942,
+      "latitude": 1.908702111050279,
+      "speed": 12.175651968143839
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 125.45661785218284,
+      "latitude": 0.4630179979837967,
+      "speed": 13.556614602132756
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 198.1592690380936,
+      "latitude": -0.7417885274218659,
+      "speed": 6.54211531222834
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 86.13651271583865,
+      "latitude": 3.2301963129546323,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-015",
+   "birth": {
+    "utcDateTime": "2204-04-01T15:35:23.000Z",
+    "latitude": -42.1349,
+    "longitude": 154.6713,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 11.050076134695397,
+    "ayanamsaValue": 24.04018972538107,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 325.2398403336987,
+      "latitude": -4.5495659402278,
+      "speed": 5.332032556501319
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 191.80122564884357,
+      "latitude": 2.2355178127894524,
+      "speed": 3.0222502748484255
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 170.50958322382664,
+      "latitude": 4.303787861944183,
+      "speed": 5.388562315176478
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 30,
+      "latitude": 3.358169807450391,
+      "speed": 7.4122013291778845
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 324.72577017466836,
+      "latitude": -3.4969214651344083,
+      "speed": 3.073656935244302
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 215.10716153198334,
+      "latitude": -4.826091778371827,
+      "speed": 8.411863578760094
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 15.089755581932312,
+      "latitude": -4.982085380247395,
+      "speed": 2.636549335003427
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 261.7628898654786,
+      "latitude": -1.6328375187977873,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-016",
+   "birth": {
+    "utcDateTime": "1951-06-08T09:38:02.000Z",
+    "latitude": -40.8565,
+    "longitude": 63.007,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 359.9999999,
+    "ayanamsaValue": 25.05746343358625,
+    "houseCusps": [
+     359.9999999,
+     24.130451775730023,
+     55.07688136507517,
+     84.296442887936,
+     114.46301515236826,
+     146.92496123510523,
+     179.23939239169556,
+     209.8527628869241,
+     240.6522348694109,
+     276.33725833135804,
+     302.87651895382896,
+     331.3699401162752
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 65.52027317995143,
+      "latitude": -3.2834042311611524,
+      "speed": 5.490079944891919
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 311.0185324366727,
+      "latitude": -4.515118113103206,
+      "speed": 1.8623481000393447
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 137.4536232017703,
+      "latitude": 3.214292212602148,
+      "speed": 11.54448602102936
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 187.8051966902642,
+      "latitude": 3.7361615401833177,
+      "speed": 3.390655073697509
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 304.8859230792614,
+      "latitude": -4.004708173263981,
+      "speed": 9.502887910331808
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 119.54237794513396,
+      "latitude": -2.562379590490954,
+      "speed": 4.060954319554739
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 98.53176152869399,
+      "latitude": -4.642206066907972,
+      "speed": 8.682848625979085
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 0,
+      "latitude": 2.5610290997284766,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-017",
+   "birth": {
+    "utcDateTime": "2390-10-12T15:26:17.000Z",
+    "latitude": 36.359,
+    "longitude": -145.1459,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 247.73448144448608,
+    "ayanamsaValue": 21.82102231312601,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 162.10593653249774,
+      "latitude": -1.592999794635257,
+      "speed": 0.5827631458859337
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 244.46695563761875,
+      "latitude": 0.6871571092909878,
+      "speed": 0.13016434042418634
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 284.532340120639,
+      "latitude": -2.744774371601574,
+      "speed": 0.9113077887738039
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 30,
+      "latitude": -2.8302860180586342,
+      "speed": 3.9069700214301912
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 240,
+      "latitude": -0.9242708392162484,
+      "speed": -0.9623565538363801
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 292.23584543317986,
+      "latitude": 2.660610949672341,
+      "speed": 2.090353562464805
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 300.3435353344106,
+      "latitude": 2.877962494233792,
+      "speed": -0.3656470808305431
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 316.74519492489435,
+      "latitude": 2.146765260063357,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-018",
+   "birth": {
+    "utcDateTime": "2021-10-26T09:16:20.000Z",
+    "latitude": -47.439,
+    "longitude": -58.7238,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 3.3333333333333335,
+    "ayanamsaValue": 25.062238948126677,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 290.7939290284703,
+      "latitude": -0.18255157840377834,
+      "speed": 8.872995855069636
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 338.80809195665046,
+      "latitude": -2.438937924776472,
+      "speed": 11.030052118904745
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -4.880445057715475,
+      "speed": 0.39829707222177646
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 271.95028859548376,
+      "latitude": -2.1097085871570007,
+      "speed": 1.6595498922537852
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 111.96889022696082,
+      "latitude": 2.174935495520513,
+      "speed": 10.157066664688253
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 286.6024317011352,
+      "latitude": -4.809646555117273,
+      "speed": 5.751826100983153
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 255.1836166052546,
+      "latitude": -2.1145558033633263,
+      "speed": 12.783296562709053
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -2.4489788120412683,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-019",
+   "birth": {
+    "utcDateTime": "2214-05-10T14:29:53.000Z",
+    "latitude": -47.1825,
+    "longitude": -109.2742,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 297.32791532813917,
+    "ayanamsaValue": 25.006836815629928,
+    "houseCusps": [
+     297.32791532813917,
+     332.7410315783641,
+     2.054088561812762,
+     35.22841743990887,
+     61.552753819407485,
+     91.55186627235605,
+     117.22870119825018,
+     148.1546632619711,
+     172.00502733013957,
+     202.66164175280562,
+     242.74192857728065,
+     273.9698440854571
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 341.76913768379586,
+      "latitude": -0.30039124535091233,
+      "speed": 0.24547784431502429
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 3.08177146654336,
+      "speed": 8.502820244991424
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 234.59715922837185,
+      "latitude": 0.30939959372396775,
+      "speed": 0.22285518798969717
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 37.7535127346587,
+      "latitude": -4.813266355245735,
+      "speed": -0.2245071000219392
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 193.26350859204328,
+      "latitude": 4.721341710978779,
+      "speed": 4.0658871114383714
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 43.73997446796769,
+      "latitude": -0.5166848323664608,
+      "speed": 13.142461020126666
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 168.47957309417623,
+      "latitude": -4.127865036563279,
+      "speed": 12.484341858894433
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 286.46234377579583,
+      "latitude": -1.1116188628468429,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-020",
+   "birth": {
+    "utcDateTime": "1973-07-27T15:31:15.000Z",
+    "latitude": -41.171,
+    "longitude": 119.3485,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 40,
+    "ayanamsaValue": 25.64105696085213,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 73.95080728585877,
+      "latitude": 2.039600965439094,
+      "speed": -0.4633412664857114
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 209.1685823755926,
+      "latitude": -4.816466603167759,
+      "speed": 10.681590745536152
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 35.225076354191756,
+      "latitude": 1.7607365615876116,
+      "speed": 2.4294996477631408
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 334.8330586012157,
+      "latitude": 2.3111806970695223,
+      "speed": 5.844918313317394
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 249.29544759248273,
+      "latitude": 4.78242770088505,
+      "speed": 13.835598126019354
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 0,
+      "latitude": -4.524335649683033,
+      "speed": 4.358737019484322
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 336.24806517985974,
+      "latitude": -2.285504003446135,
+      "speed": 9.68163762019919
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 62.00275247124822,
+      "latitude": -4.397326153616994,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-021",
+   "birth": {
+    "utcDateTime": "2365-08-09T10:53:11.000Z",
+    "latitude": -20.8052,
+    "longitude": -176.2618,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 29.241345651568203,
+    "ayanamsaValue": 22.738820285715665,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 292.61804076420185,
+      "latitude": 4.780902622577457,
+      "speed": 8.10509965874859
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 120,
+      "latitude": -2.889022312273185,
+      "speed": -0.5670747617384511
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 92.1405637288173,
+      "latitude": -0.20291832279427435,
+      "speed": 5.65218411953377
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 84.80892817704262,
+      "latitude": -3.4872668895136973,
+      "speed": 12.520201173935297
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 217.80473738565027,
+      "latitude": 3.5628226695641274,
+      "speed": -0.6047303902106529
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 223.64486943234883,
+      "latitude": -4.640671637872477,
+      "speed": 12.126564543189971
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 145.60270382676654,
+      "latitude": 0.6815166606486978,
+      "speed": 3.175523946176333
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 159.6365764843159,
+      "latitude": 2.7665174047156462,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-022",
+   "birth": {
+    "utcDateTime": "2316-10-22T05:10:17.000Z",
+    "latitude": 13.6418,
+    "longitude": 154.0818,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 184.06072492319498,
+    "ayanamsaValue": 24.56005434084546,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 62.64138283216043,
+      "latitude": 0.10627945094409696,
+      "speed": 7.907167518278271
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -1.881530667670368,
+      "speed": 13.707219296059607
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 7.7990552090973875,
+      "latitude": 2.3991903545118474,
+      "speed": 2.923983878715262
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 265.652279128958,
+      "latitude": 2.468837969938452,
+      "speed": 4.994124785389702
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 236.66699361656842,
+      "latitude": -0.21685086031438505,
+      "speed": 7.70747222779481
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -2.2637104273902264,
+      "speed": 3.993359723909191
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 282.7543091849669,
+      "latitude": 2.691424980295558,
+      "speed": 6.7721297588078215
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 120,
+      "latitude": -0.6545607955677015,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-023",
+   "birth": {
+    "utcDateTime": "1945-03-26T20:05:25.000Z",
+    "latitude": -46.0096,
+    "longitude": 55.9086,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 119.91396785781781,
+    "ayanamsaValue": 23.50889167904947,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 0,
+      "latitude": -1.020677094146516,
+      "speed": 8.25637984915349
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 118.37827138586512,
+      "latitude": -0.43826458733024953,
+      "speed": 7.283983429680029
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 2.140553513228679,
+      "speed": 13.985388711171156
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 359.9999999,
+      "latitude": -2.884393064188883,
+      "speed": 6.22903808220471
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 175.68126250871333,
+      "latitude": 3.256765027360034,
+      "speed": 2.3913966996023737
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 269.5783866207532,
+      "latitude": 2.593539325071724,
+      "speed": 3.031497050886835
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 123.78973860979099,
+      "latitude": 3.8641975422761643,
+      "speed": 1.0623478004359406
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 180.22151875890643,
+      "latitude": 4.683515998283266,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-024",
+   "birth": {
+    "utcDateTime": "2163-02-06T01:03:51.000Z",
+    "latitude": 6.5232,
+    "longitude": -90.0781,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 240,
+    "ayanamsaValue": 20.011672516231798,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 232.11960720316296,
+      "latitude": -2.3966390271575055,
+      "speed": 13.696384485505446
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 30,
+      "latitude": 2.6155081196517873,
+      "speed": 13.508994397517148
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 341.8611078723432,
+      "latitude": -2.5878486563686964,
+      "speed": 7.55560441913693
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 161.62504650796186,
+      "latitude": 3.537050229168017,
+      "speed": 4.012731983926668
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 120,
+      "latitude": 4.323367889139668,
+      "speed": 9.356716173661495
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": 0.044258926668496734,
+      "speed": 4.260611590530211
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 257.83316175766834,
+      "latitude": -0.6885239059532982,
+      "speed": 6.1812628782515215
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 62.15299187410838,
+      "latitude": -4.845065032086232,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-025",
+   "birth": {
+    "utcDateTime": "2269-02-28T11:43:36.000Z",
+    "latitude": 47.9939,
+    "longitude": -13.4601,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 20.20657693171732,
+    "ayanamsaValue": 24.67989791109897,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 40,
+      "latitude": 3.294613208203222,
+      "speed": 11.112880503499541
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 1.6256023222461735,
+      "latitude": 1.383837555722348,
+      "speed": 3.7497984089884113
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 317.8297946250699,
+      "latitude": -4.30221850162426,
+      "speed": 0.30660260064816347
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 314.2796159951951,
+      "latitude": 2.4892250867738426,
+      "speed": 6.809181109216819
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 319.21492733673773,
+      "latitude": 1.3516102654844584,
+      "speed": 0.8030371096345665
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 249.49533415368276,
+      "latitude": 3.2289512267370952,
+      "speed": 13.236367833020513
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 324.5428924016557,
+      "latitude": -0.5355846964131583,
+      "speed": 2.923557736616745
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 112.22623956004944,
+      "latitude": 0.12390592522492838,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-026",
+   "birth": {
+    "utcDateTime": "2033-07-08T17:56:38.000Z",
+    "latitude": 16.9576,
+    "longitude": 135.6444,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 0,
+    "ayanamsaValue": 22.879081592371787,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 289.8873972752606,
+      "latitude": -2.6983530429308376,
+      "speed": 4.152493996916137
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 286.43696277236853,
+      "latitude": 1.6640199795129993,
+      "speed": 12.792260364322917
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 177.22356112283916,
+      "latitude": 3.4907560406177414,
+      "speed": 0.6823390181582991
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 140.83866270418025,
+      "latitude": 4.042057655050984,
+      "speed": -0.5450803109595794
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 359.9999999,
+      "latitude": -0.10736706004745322,
+      "speed": -0.7903009469636476
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 261.5463791412808,
+      "latitude": 3.6891058192719175,
+      "speed": 8.254043220210336
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 175.64352510152784,
+      "latitude": -3.1090921517331127,
+      "speed": 4.734234611435348
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 298.13723164310187,
+      "latitude": 1.2824322978454141,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-027",
+   "birth": {
+    "utcDateTime": "2186-01-19T02:44:09.000Z",
+    "latitude": -18.6853,
+    "longitude": -1.4682,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 196.0150325919083,
+    "ayanamsaValue": 22.941566605514435,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 226.07494435762104,
+      "latitude": -0.9054449202638306,
+      "speed": 9.267697756510787
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": -1.8366230021573982,
+      "speed": 12.33061831625337
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 10.201420951881314,
+      "latitude": 1.8388958081751907,
+      "speed": 7.504079887571502
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 205.8499885787994,
+      "latitude": -0.7496785006505302,
+      "speed": 2.4371823286932246
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 91.44416067502895,
+      "latitude": 2.7143556516181766,
+      "speed": 9.020969540449803
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 70.80382050970607,
+      "latitude": -3.7008084235189287,
+      "speed": 2.355572921446843
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 122.23387840624815,
+      "latitude": 2.432115445167634,
+      "speed": 4.701516714105063
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 100.1945437871695,
+      "latitude": -0.8647935568919163,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-028",
+   "birth": {
+    "utcDateTime": "2238-09-01T19:14:03.000Z",
+    "latitude": -7.938,
+    "longitude": -117.0202,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 216.71575088708843,
+    "ayanamsaValue": 23.87489762881261,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 205.6493974662345,
+      "latitude": 1.2558271464226722,
+      "speed": 10.6959095762665
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 187.9892684956262,
+      "latitude": -3.3025905241003253,
+      "speed": -0.3105019986403176
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 168.4020395511641,
+      "latitude": -0.06446915237425443,
+      "speed": 1.585176297707446
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 154.71441440002548,
+      "latitude": 2.3744446888124715,
+      "speed": 2.187223687893087
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 2.8843230208908377,
+      "speed": 11.471633094744483
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 72.1067045558499,
+      "latitude": 4.028629694793356,
+      "speed": 6.282895838732937
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 1.7825739230026114,
+      "speed": 9.504901183324382
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 210.61482762279914,
+      "latitude": 1.9194256666581389,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-029",
+   "birth": {
+    "utcDateTime": "2255-05-23T00:46:41.000Z",
+    "latitude": 13.9363,
+    "longitude": 32.567,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 23.989857302895395,
+    "ayanamsaValue": 24.19690962895084,
+    "houseCusps": [
+     23.989857302895395,
+     59.75542098597616,
+     91.43561032921738,
+     114.61998286487703,
+     145.78342579008134,
+     171.46372484407186,
+     204.3659056118126,
+     238.1460354486785,
+     271.6440348956227,
+     290.48391323846363,
+     318.43585418741475,
+     359.8845236662825
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 307.71114726620624,
+      "latitude": -3.114955938858338,
+      "speed": 2.354860657309031
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 120,
+      "latitude": 0.9430240058637072,
+      "speed": 13.707499927708225
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 40,
+      "latitude": 4.082089676189089,
+      "speed": 8.629588838365601
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 40,
+      "latitude": -0.09111518683676856,
+      "speed": 0.8800093608677337
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 331.38554515940575,
+      "latitude": 4.442040970942399,
+      "speed": 4.797580187681845
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 283.4317813367713,
+      "latitude": 2.84547842729968,
+      "speed": 2.4951601888591854
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 114.86349835838202,
+      "latitude": 4.312697069434577,
+      "speed": 10.073357665271995
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 135.95082000731165,
+      "latitude": 3.7131042979066997,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-030",
+   "birth": {
+    "utcDateTime": "2254-10-19T07:41:49.000Z",
+    "latitude": 6.0643,
+    "longitude": 109.4366,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 340.15835719814817,
+    "ayanamsaValue": 24.57244244693326,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 328.35852431358967,
+      "latitude": 4.911753041438148,
+      "speed": 12.123111175282677
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 138.8898290053965,
+      "latitude": -3.5789170925946143,
+      "speed": 5.244599200220351
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 177.61288962234428,
+      "latitude": -4.452489778663179,
+      "speed": 0.9050250321383939
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 272.61491108408813,
+      "latitude": 4.642823076266344,
+      "speed": 8.985228402161754
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 209.78691181414248,
+      "latitude": -0.9190928284008653,
+      "speed": 10.724232397857254
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 254.20840800777782,
+      "latitude": -2.960218966491037,
+      "speed": 7.659616403400523
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 0,
+      "latitude": -0.7016475415014147,
+      "speed": 2.6611508929601797
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 177.31020311556526,
+      "latitude": 1.8475830608462251,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-031",
+   "birth": {
+    "utcDateTime": "2317-08-14T03:29:03.000Z",
+    "latitude": 53.7641,
+    "longitude": -167.649,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 1.2891806078313417,
+    "ayanamsaValue": 24.068920031912363,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 331.84445552395823,
+      "latitude": 4.473342432173984,
+      "speed": -0.9401418890559495
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 271.8584962648214,
+      "latitude": -0.7884350264094584,
+      "speed": 4.87609657530517
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 140.53052251844332,
+      "latitude": 0.009417059862254717,
+      "speed": 0.7979568861901547
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 31.575977784309977,
+      "latitude": -2.7964074823441876,
+      "speed": 9.220429061679827
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 355.54596798793006,
+      "latitude": -2.3940791036245357,
+      "speed": 12.857309728069941
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 255.46478006935268,
+      "latitude": -0.7173579239866426,
+      "speed": 8.514250700037286
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 4.253317910763133,
+      "speed": 8.37885084918461
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 262.62491743422913,
+      "latitude": 0.6781532247655475,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-032",
+   "birth": {
+    "utcDateTime": "2273-03-07T23:40:20.000Z",
+    "latitude": 27.8042,
+    "longitude": -128.8574,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 3.3333333333333335,
+    "ayanamsaValue": 23.076444246759444,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 240,
+      "latitude": -3.822416363709489,
+      "speed": 6.397572680735501
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 22.811442501384413,
+      "latitude": -0.3010867178439556,
+      "speed": 8.39824341990404
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 306.1487919832773,
+      "latitude": 0.14482361943055633,
+      "speed": 13.956731663924328
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 3.3180777474755345,
+      "speed": 1.119859542099101
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 40,
+      "latitude": 0.94387239298801,
+      "speed": 11.090429739283241
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 4.875076038800616,
+      "speed": 8.025256927120482
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 125.97074713354067,
+      "latitude": -0.17974417650894203,
+      "speed": 1.2729349018379952
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 226.93300935923003,
+      "latitude": 1.0006691128098932,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-033",
+   "birth": {
+    "utcDateTime": "1859-11-23T01:18:44.000Z",
+    "latitude": 26.0228,
+    "longitude": -23.7886,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 149.0674551888254,
+    "ayanamsaValue": 25.165983889176324,
+    "houseCusps": [
+     149.0674551888254,
+     178.6297559504461,
+     201.2192541720453,
+     236.46163269678343,
+     263.1320935624957,
+     296.55556207070504,
+     331.6837519722772,
+     354.39650831572,
+     33.69681909352846,
+     65.03492332745583,
+     92.56102518589051,
+     118.68098440330726
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 359.9999999,
+      "latitude": -3.522909474754968,
+      "speed": 13.14226750606841
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 115.73164909863883,
+      "latitude": 3.822568176542031,
+      "speed": 12.691773892302079
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 143.8305797613043,
+      "latitude": 1.7960362764677313,
+      "speed": 4.202651567454316
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 18.61295523693858,
+      "latitude": 2.9800003376590105,
+      "speed": 4.483600669017465
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 284.74985359900353,
+      "latitude": 3.7322111683016086,
+      "speed": 6.932889374599074
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 302.1224050362236,
+      "latitude": 2.30266674249207,
+      "speed": 9.034120082898609
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 111.10078285195804,
+      "latitude": -0.9155800073624611,
+      "speed": 2.2265539290260126
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 168.2802686612679,
+      "latitude": 2.2883543538860627,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-034",
+   "birth": {
+    "utcDateTime": "2382-05-20T14:57:36.000Z",
+    "latitude": -54.0579,
+    "longitude": 103.2309,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 321.7641394156434,
+    "ayanamsaValue": 22.58617491998447,
+    "houseCusps": [
+     321.7641394156434,
+     350.50319069677874,
+     25.6767710544824,
+     46.78634085709865,
+     83.27320674081778,
+     107.90377031876835,
+     143.16567168961245,
+     173.5292016637079,
+     194.04139774838575,
+     225.9553046371076,
+     260.5397664691111,
+     285.4255087163965
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 338.00529359633174,
+      "latitude": -2.505280235509053,
+      "speed": 1.2255955905716114
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 116.67280538847155,
+      "latitude": 2.032808472330485,
+      "speed": 7.1833520939706865
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 120,
+      "latitude": -1.5158619518846983,
+      "speed": 7.997138039731119
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 161.25000982215855,
+      "latitude": -3.992656351429683,
+      "speed": -0.8320049463466641
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -1.5756061833775927,
+      "speed": 4.612101534660684
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 306.00136696425136,
+      "latitude": 2.5107864320963067,
+      "speed": 3.629458030381268
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 63.72075798111085,
+      "latitude": -0.20711439733759995,
+      "speed": 2.4446096035971334
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 320.8457048441517,
+      "latitude": -1.8303871698330632,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-035",
+   "birth": {
+    "utcDateTime": "2381-06-04T15:24:46.000Z",
+    "latitude": 22.7822,
+    "longitude": -154.4471,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 3.3333333333333335,
+    "ayanamsaValue": 21.688124326253366,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 158.77439154768666,
+      "latitude": -4.94953364508007,
+      "speed": 3.225018931083447
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 250.36925104986923,
+      "latitude": 1.6723844118952522,
+      "speed": 5.723782029772751
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 276.74687169689986,
+      "latitude": -2.925192848483414,
+      "speed": -0.25449380276957834
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 198.78114792703244,
+      "latitude": 3.1124347756515434,
+      "speed": 0.7064292738029678
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 120,
+      "latitude": 0.013912978116622732,
+      "speed": 1.2612931833099785
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 56.97117269277461,
+      "latitude": -0.6477709682718249,
+      "speed": 4.22892303169824
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 287.80636198607544,
+      "latitude": 4.849796174552525,
+      "speed": 8.893163891510685
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 327.6628768537831,
+      "latitude": 3.6516636584892996,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-036",
+   "birth": {
+    "utcDateTime": "2056-10-26T16:42:54.000Z",
+    "latitude": -25.5111,
+    "longitude": 26.9399,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 309.82283269133256,
+    "ayanamsaValue": 24.940232168067848,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 160.4851363590182,
+      "latitude": 3.8870226779051134,
+      "speed": 0.6913454532773009
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 155.8937300607306,
+      "latitude": -0.8536331186939714,
+      "speed": 4.1110012766455375
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 202.25509334297382,
+      "latitude": 2.5524563064077945,
+      "speed": 6.057203659198281
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 209.71303903385717,
+      "latitude": 0.4487206664977119,
+      "speed": 5.210075065154871
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 4.522711425253583,
+      "speed": 13.229137989663142
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 0,
+      "latitude": -2.7100455468566675,
+      "speed": 1.6504653056428271
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 353.04002480940864,
+      "latitude": 4.994014310048069,
+      "speed": 4.012070778359655
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 322.32354322026396,
+      "latitude": 0.06448662432699148,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-037",
+   "birth": {
+    "utcDateTime": "2298-08-04T16:33:51.000Z",
+    "latitude": 27.8754,
+    "longitude": -80.7648,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 120,
+    "ayanamsaValue": 23.171466995008654,
+    "houseCusps": [
+     120,
+     143.43758593327755,
+     179.95872418739947,
+     209.8834064181678,
+     236.84843129054934,
+     265.8250269191722,
+     307.3807218694238,
+     323.9667837053852,
+     359.32769732215326,
+     24.37927098723685,
+     56.65992293088385,
+     93.79343577914034
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 359.9999999,
+      "latitude": 2.2519712917993093,
+      "speed": 5.927119070301774
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 2.217452618895619,
+      "latitude": -3.3354889117332567,
+      "speed": 7.5882038868162525
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -1.9970837479041146,
+      "speed": 7.755291490293315
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 359.9999999,
+      "latitude": -1.0307751492735417,
+      "speed": 1.3930811862224894
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 240,
+      "latitude": -1.7206309885594298,
+      "speed": 2.5851874447865937
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 96.85554470938746,
+      "latitude": -3.9101058517598575,
+      "speed": 6.886722838187648
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 180.41511906658212,
+      "latitude": -4.683381947648218,
+      "speed": 4.728459042781277
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 240.91895288099738,
+      "latitude": 2.863786401026278,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-038",
+   "birth": {
+    "utcDateTime": "2378-02-14T03:34:38.000Z",
+    "latitude": 56.1619,
+    "longitude": 28.764,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 162.43009067803266,
+    "ayanamsaValue": 20.593068070668192,
+    "houseCusps": [
+     162.43009067803266,
+     192.84508379123767,
+     219.21177211652284,
+     247.94668919155055,
+     278.36986766359917,
+     314.9781452707667,
+     334.7741720052,
+     7.802357403887527,
+     44.099908530434845,
+     76.95635752537845,
+     102.98763528798037,
+     125.14856154541019
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 82.47114338111894,
+      "latitude": -4.648809248313733,
+      "speed": 3.250985258027608
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 138.08023214522714,
+      "latitude": -1.6407853246178474,
+      "speed": 10.856976157505905
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 272.0108669596659,
+      "latitude": 2.889907581967295,
+      "speed": 2.8276051312889274
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 265.6083328202604,
+      "latitude": 0.06839086681898898,
+      "speed": 13.848999384964996
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 238.95994426906526,
+      "latitude": 4.593805304964075,
+      "speed": 3.7913026906735263
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 277.7966952551288,
+      "latitude": 1.916770168669081,
+      "speed": 6.123706468705361
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 319.3537188384298,
+      "latitude": -4.487115265706526,
+      "speed": -0.4893529285702283
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 4.289810622031343,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-039",
+   "birth": {
+    "utcDateTime": "1977-05-24T10:00:42.000Z",
+    "latitude": -47.1912,
+    "longitude": 132.9643,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 3.3333333333333335,
+    "ayanamsaValue": 21.86700502650859,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 344.3399989009604,
+      "latitude": 0.5839793935612816,
+      "speed": 12.184221570264905
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 85.27433876453748,
+      "latitude": -1.2902940115870223,
+      "speed": 12.768919795111733
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 120,
+      "latitude": -0.585685832654784,
+      "speed": 9.91019259945131
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 265.04561939747543,
+      "latitude": -0.05301880521905922,
+      "speed": 9.05697277187641
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 141.7524622900589,
+      "latitude": -3.5454030054308525,
+      "speed": 12.419539252943343
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": -1.9127364834992577,
+      "speed": 10.44292569352333
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 30,
+      "latitude": 3.350272575873234,
+      "speed": 9.49867735405754
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 327.1557076610925,
+      "latitude": -4.743782079853575,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-040",
+   "birth": {
+    "utcDateTime": "2239-10-11T03:22:07.000Z",
+    "latitude": -27.4871,
+    "longitude": 29.7588,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 5.536277690254008,
+    "ayanamsaValue": 20.16807709231767,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 242.2160231240402,
+      "latitude": -1.6417156742486472,
+      "speed": 1.3809423252665836
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 120.79332963034051,
+      "latitude": 3.2689555666433794,
+      "speed": 1.722653812823976
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 34.617670893870184,
+      "latitude": 0.8375843728911629,
+      "speed": 1.889918871016535
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 120,
+      "latitude": 3.694226654233111,
+      "speed": 13.822309718414184
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 73.07905415230198,
+      "latitude": 1.6134185309618951,
+      "speed": 0.5355936222616007
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 176.6105775502701,
+      "latitude": -1.5088268207684252,
+      "speed": 9.085917321082206
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 359.9999999,
+      "latitude": 2.2909774476444476,
+      "speed": 4.903905030782018
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 339.80494622079675,
+      "latitude": -4.547137168219141,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-041",
+   "birth": {
+    "utcDateTime": "1849-08-12T01:00:09.000Z",
+    "latitude": 26.2381,
+    "longitude": -9.7591,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 141.87704497607902,
+    "ayanamsaValue": 25.665146371483857,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -4.867061688996386,
+      "speed": 2.633573969477468
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 289.6908382605632,
+      "latitude": -0.5263925474895341,
+      "speed": 12.143072846098304
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 27.081417323892158,
+      "latitude": 4.874689270147725,
+      "speed": 8.050838803842613
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 65.22142259610789,
+      "latitude": -1.0004644316873055,
+      "speed": 8.070507202816335
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 264.9747977398217,
+      "latitude": -4.060274135255329,
+      "speed": 1.7125964782548628
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -3.914487369127424,
+      "speed": 1.8711488545712776
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -3.54229094330584,
+      "speed": 5.924610970937186
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 330.8248651208915,
+      "latitude": -3.9616835843758844,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-042",
+   "birth": {
+    "utcDateTime": "2179-03-11T19:35:10.000Z",
+    "latitude": 18.2251,
+    "longitude": 78.7646,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 240.6546067674584,
+    "ayanamsaValue": 24.819695514464133,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 40,
+      "latitude": 3.17761572575111,
+      "speed": 1.5768709523095739
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 0.010516191397991648,
+      "speed": 1.5674261720627003
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 30,
+      "latitude": -2.6224724131005406,
+      "speed": 2.3666080302879875
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 109.97652069454945,
+      "latitude": -3.219013072604141,
+      "speed": 2.553668036854333
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 227.1749821982057,
+      "latitude": 2.72004589597823,
+      "speed": 7.138720657739228
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 108.55965247539176,
+      "latitude": 4.326620608197215,
+      "speed": -0.22491224300234003
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 168.79522426460127,
+      "latitude": -1.7638735256944074,
+      "speed": -0.810105484472143
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 74.71341516207885,
+      "latitude": -4.266415455184037,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-043",
+   "birth": {
+    "utcDateTime": "2156-11-13T16:07:05.000Z",
+    "latitude": -49.0434,
+    "longitude": 22.6381,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 188.8949800895777,
+    "ayanamsaValue": 21.41200995954854,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 4.635732101033943,
+      "speed": -0.4812457579568604
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 53.22072211819302,
+      "latitude": -2.5871997725666986,
+      "speed": -0.42940415809770005
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 193.88111624411826,
+      "latitude": -3.1087820794150103,
+      "speed": 9.06911039149326
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 359.9999999,
+      "latitude": 0.7420921055288598,
+      "speed": 9.265645032922178
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 40,
+      "latitude": 0.8402760507941673,
+      "speed": 8.1828942513084
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 295.0090249507955,
+      "latitude": -0.7943597931339053,
+      "speed": 3.5767863675665508
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 298.67654992855705,
+      "latitude": -2.813593245476235,
+      "speed": 7.209279281504999
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 57.59363722671792,
+      "latitude": 2.7825675888791723,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-044",
+   "birth": {
+    "utcDateTime": "2164-08-18T12:13:05.000Z",
+    "latitude": -22.5672,
+    "longitude": 97.8961,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 0,
+    "ayanamsaValue": 21.61405500844985,
+    "houseCusps": [
+     0,
+     31.540879568138536,
+     61.34753280631275,
+     95.76449167420425,
+     127.69208021064841,
+     142.1450071135349,
+     174.90311691596492,
+     205.80408081293407,
+     240.61595140756734,
+     274.3680450460486,
+     295.58410097898553,
+     327.4555138467921
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 201.20283609786483,
+      "latitude": 3.0678161194875297,
+      "speed": -0.5088316151144842
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 40,
+      "latitude": 4.691439024852496,
+      "speed": 0.4959816325487352
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 141.6584457524889,
+      "latitude": -1.9718934625714835,
+      "speed": 6.978412221814377
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 30,
+      "latitude": -3.7680112880737724,
+      "speed": -0.027750900149881796
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 261.9111278231097,
+      "latitude": -0.46512737613219635,
+      "speed": 1.9623776130442634
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 80.44121163297456,
+      "latitude": 3.7337630019570707,
+      "speed": 9.435224074784744
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 22.24566204875199,
+      "latitude": 0.8120177079080682,
+      "speed": 9.651235897135962
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 17.92106667491101,
+      "latitude": 1.4205255150170801,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-045",
+   "birth": {
+    "utcDateTime": "2361-05-12T07:31:16.000Z",
+    "latitude": -47.36,
+    "longitude": 20.4604,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 359.9999999,
+    "ayanamsaValue": 24.270927832521018,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": -3.8518614534752924,
+      "speed": 6.3178696282561795
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 94.65676271392202,
+      "latitude": -0.5883208644348361,
+      "speed": 11.195752677502037
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 139.81426391895235,
+      "latitude": -4.7877070434119915,
+      "speed": 0.7287791480850783
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 132.06389298200912,
+      "latitude": 4.454389321044152,
+      "speed": 4.023066775551037
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 248.75175892470588,
+      "latitude": -3.154562385730275,
+      "speed": 9.15574272236881
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 273.19939700765366,
+      "latitude": 3.4833322884439184,
+      "speed": 12.174819926466618
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 249.85559661524601,
+      "latitude": -2.1466850186104294,
+      "speed": 7.451718282325567
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -0.7942801612024928,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-046",
+   "birth": {
+    "utcDateTime": "1936-04-15T03:21:13.000Z",
+    "latitude": -29.24,
+    "longitude": -68.8903,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 282.0436598800786,
+    "ayanamsaValue": 22.45380277539142,
+    "houseCusps": [
+     282.0436598800786,
+     308.8486714420999,
+     335.10690585343366,
+     8.939418280007772,
+     48.036636155529095,
+     74.25887983081122,
+     98.46603951403426,
+     136.04783170742036,
+     165.7437259544629,
+     188.48441403626384,
+     222.39701608605424,
+     258.8753824066672
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 140.11029516678673,
+      "latitude": 3.4185314593842158,
+      "speed": 8.08879767377739
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 336.1786467939767,
+      "latitude": 0.775719443928824,
+      "speed": 2.6446104676119893
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 157.70940783589222,
+      "latitude": 1.6252372572438842,
+      "speed": 8.335348655692977
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 294.46305022120026,
+      "latitude": 3.8663173022490778,
+      "speed": 6.96255054605325
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 40,
+      "latitude": 1.3964991727022742,
+      "speed": 6.052583638764325
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 40,
+      "latitude": 1.7125451280831827,
+      "speed": 8.681372076746857
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 271.99320151799844,
+      "latitude": -2.8925569008350682,
+      "speed": 11.341313471931935
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 246.60049687543508,
+      "latitude": 2.009888872507272,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-047",
+   "birth": {
+    "utcDateTime": "1883-05-26T07:26:39.000Z",
+    "latitude": 38.1743,
+    "longitude": 117.2617,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 104.03298254686767,
+    "ayanamsaValue": 21.88166764385321,
+    "houseCusps": [
+     104.03298254686767,
+     131.61526149755093,
+     162.06186467159276,
+     196.90115078153343,
+     216.655819401391,
+     257.41894452196516,
+     286.0758426035557,
+     306.7399255555147,
+     351.2661095283059,
+     14.522270064040413,
+     49.81044514239909,
+     75.46638928315514
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 218.75917490243674,
+      "latitude": -3.5577125125182985,
+      "speed": -0.5725038710875926
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 320.11979165142037,
+      "latitude": -3.194228987186963,
+      "speed": 2.799996528901306
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 11.741844621796202,
+      "latitude": -0.5180693157018643,
+      "speed": 6.524450611384643
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 324.45357130110506,
+      "latitude": -3.8239325358378062,
+      "speed": 5.018112259205871
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": -3.853128515478963,
+      "speed": 10.804083039171058
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 48.755258505753986,
+      "latitude": 4.997537388321328,
+      "speed": 1.4358122471476813
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 358.9495971148988,
+      "latitude": 0.24128635815033306,
+      "speed": 2.4455084347848657
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 287.5887964678307,
+      "latitude": 2.0074663217208846,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-048",
+   "birth": {
+    "utcDateTime": "2187-01-08T17:24:25.000Z",
+    "latitude": 13.2933,
+    "longitude": -33.2816,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 166.28503602211464,
+    "ayanamsaValue": 22.579953121932554,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": 0.12589545674350155,
+      "speed": 2.5716740528638447
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 30,
+      "latitude": -4.319608763875066,
+      "speed": 0.7231103448765028
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 323.24965259364603,
+      "latitude": 3.839070043902348,
+      "speed": 0.5355382141762808
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 26.244878673726806,
+      "latitude": 3.3814488882491744,
+      "speed": 13.041793353427908
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 0.05580748754634879,
+      "latitude": 0.1454308754920488,
+      "speed": 0.09727981050490198
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 122.4364413864395,
+      "latitude": 4.345227488259567,
+      "speed": 7.610899963024988
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 0,
+      "latitude": 3.8943919182358293,
+      "speed": 11.978810176154985
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 0,
+      "latitude": 1.1652941979968192,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-049",
+   "birth": {
+    "utcDateTime": "2317-10-09T05:44:57.000Z",
+    "latitude": -5.0223,
+    "longitude": 7.3859,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 188.06921293883008,
+    "ayanamsaValue": 25.36461415544301,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": 1.6574408485690748,
+      "speed": 11.824730165391358
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 246.3292938477091,
+      "latitude": 3.5250865491024808,
+      "speed": 3.1127138159390793
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 40.73746547170467,
+      "latitude": 2.965070444572829,
+      "speed": 1.152003500473965
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 226.3058040300166,
+      "latitude": -2.0382737394124173,
+      "speed": 11.958803367579609
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 258.51729226118766,
+      "latitude": 2.481254872857985,
+      "speed": 1.9678145546577954
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 244.09537192869752,
+      "latitude": 1.8300733916989298,
+      "speed": 1.1462563149306737
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 240,
+      "latitude": 0.1575308996525271,
+      "speed": 13.541850932408252
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 159.5788772468639,
+      "latitude": 4.624837849858494,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-050",
+   "birth": {
+    "utcDateTime": "2382-09-19T01:31:50.000Z",
+    "latitude": -22.6323,
+    "longitude": 97.6615,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 139.1231385981294,
+    "ayanamsaValue": 23.22110860838308,
+    "houseCusps": [
+     139.1231385981294,
+     173.8206249662092,
+     196.41355712108597,
+     222.36427735323787,
+     261.4742094425001,
+     295.46814691103646,
+     319.21058149050737,
+     345.5704529741825,
+     23.921488618303897,
+     43.611786906458235,
+     82.18987298461093,
+     114.67072078933649
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 30,
+      "latitude": 2.094594559402365,
+      "speed": 9.101704046713614
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 292.22940882475876,
+      "latitude": 2.965572886297977,
+      "speed": 13.186569497278409
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -0.26534931814808616,
+      "speed": 10.628176561807857
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 56.586126715796176,
+      "latitude": 1.480820880263538,
+      "speed": 6.381236152986656
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 341.6419985307414,
+      "latitude": -3.1286331835715817,
+      "speed": 8.236403478332598
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 335.35619093159545,
+      "latitude": 0.8867899201769376,
+      "speed": 8.878969901463359
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -4.85647423572763,
+      "speed": 11.153584882237702
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -0.6647808147313263,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-051",
+   "birth": {
+    "utcDateTime": "2132-11-24T00:31:26.000Z",
+    "latitude": 24.9029,
+    "longitude": -18.7038,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 183.69174272181266,
+    "ayanamsaValue": 21.407926372442137,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 254.4556044656682,
+      "latitude": -1.04646435990553,
+      "speed": 4.572635843961637
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 62.81510251784206,
+      "latitude": -4.836498739111478,
+      "speed": 0.4352248347628276
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 301.95572097297924,
+      "latitude": 1.1714343083436995,
+      "speed": 2.26634819051547
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 0,
+      "latitude": -4.004601052156036,
+      "speed": 13.5770808647532
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 20.566548293922825,
+      "latitude": 1.1871641709739054,
+      "speed": 6.4739692154103174
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 256.2672810035294,
+      "latitude": -1.8341765108649053,
+      "speed": -0.9955318396686171
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 75.37788832149369,
+      "latitude": 2.1868919864089182,
+      "speed": 8.25227251321622
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 314.81926402314593,
+      "latitude": 3.783960617570523,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-052",
+   "birth": {
+    "utcDateTime": "2249-10-13T10:44:10.000Z",
+    "latitude": -56.661,
+    "longitude": -63.7005,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 51.937704408845576,
+    "ayanamsaValue": 20.81811769355508,
+    "houseCusps": [
+     51.937704408845576,
+     81.17572191544535,
+     109.01243773033539,
+     135.9912929527595,
+     174.28047700254177,
+     195.52188571575903,
+     233.87620948685964,
+     266.9428883041466,
+     287.99016296387134,
+     314.34716388867656,
+     344.9638594308427,
+     20.25391586694616
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 251.9907865350988,
+      "latitude": 2.7122901358627702,
+      "speed": 7.677718922540187
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 33.928993908765335,
+      "latitude": -4.83175785300816,
+      "speed": 0.3933112266845371
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 309.0990496561041,
+      "latitude": 0.7420280880584604,
+      "speed": 6.510019637860164
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": 4.022060763006014,
+      "speed": 6.884063942919537
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 240,
+      "latitude": -4.4309561285123635,
+      "speed": 13.940107768016437
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 304.68118118802414,
+      "latitude": 0.931880511997174,
+      "speed": 10.576240544753638
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 330.08785255330554,
+      "latitude": -0.4962128903395566,
+      "speed": 12.534103682441915
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 120,
+      "latitude": 0.20340712589553167,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-053",
+   "birth": {
+    "utcDateTime": "1972-02-19T09:57:50.000Z",
+    "latitude": 10.7372,
+    "longitude": -130.0786,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 120,
+    "ayanamsaValue": 20.38579247788039,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 18.624743583432416,
+      "latitude": 2.7165621310428847,
+      "speed": 2.5724775345916493
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 240.5300452406412,
+      "latitude": -2.5211235765095186,
+      "speed": -0.9957232799100498
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 359.9999999,
+      "latitude": -3.925549932046094,
+      "speed": 9.422955842520407
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 319.61211920124487,
+      "latitude": 0.14539973471709455,
+      "speed": 3.2282252861871514
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 172.92581898327282,
+      "latitude": 2.934831597756058,
+      "speed": 7.1927701288587365
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 359.9999999,
+      "latitude": 4.065958925332055,
+      "speed": 11.68698459913103
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 319.2152412465787,
+      "latitude": -1.952883771600733,
+      "speed": 3.5472648947123275
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 121.90221376897021,
+      "latitude": 4.027100758996907,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-054",
+   "birth": {
+    "utcDateTime": "1944-11-24T07:25:56.000Z",
+    "latitude": -51.3855,
+    "longitude": 132.3042,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 166.34238268684726,
+    "ayanamsaValue": 22.236924446364934,
+    "houseCusps": [
+     166.34238268684726,
+     202.59956292680374,
+     222.2425052024509,
+     263.7013676973485,
+     281.232903566928,
+     317.8260590574734,
+     350.90888542580564,
+     11.387104216036732,
+     42.34997635828444,
+     69.18837947824136,
+     102.29356136586222,
+     130.0062389320393
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 145.50529729482915,
+      "latitude": 3.7723384184215867,
+      "speed": 6.552589822045491
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 23.812513519189732,
+      "latitude": -1.7421023002191358,
+      "speed": 12.783296894166446
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 177.88574019051103,
+      "latitude": 3.1414740309106577,
+      "speed": -0.16391538442476894
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 167.85714996541466,
+      "latitude": 4.989200602564011,
+      "speed": 13.27137235034119
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 281.15230957260025,
+      "latitude": 1.5141088183491362,
+      "speed": 8.745781406188668
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 120,
+      "latitude": 0.047466186415187295,
+      "speed": 13.868750179519116
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 163.6020944455269,
+      "latitude": 1.5795578748423589,
+      "speed": 7.149819553557416
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 76.94923830631132,
+      "latitude": -4.259566925104529,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-055",
+   "birth": {
+    "utcDateTime": "2055-05-05T06:02:46.000Z",
+    "latitude": -41.8795,
+    "longitude": -161.8199,
+    "ayanamsa": "lahiri",
+    "houseSystem": "equal",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 132.50614196275652,
+    "ayanamsaValue": 21.9027062044938,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 281.20369839502445,
+      "latitude": 3.0152986689981507,
+      "speed": 2.701658215395269
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 154.28571428571428,
+      "latitude": -2.776987446489297,
+      "speed": 1.4501819338735
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 159.68316899381566,
+      "latitude": -4.818863856997674,
+      "speed": 7.261326674623813
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 81.2947269914779,
+      "latitude": -4.1776050269393465,
+      "speed": 5.594511546473975
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 246.60039752234567,
+      "latitude": -2.5387948866896792,
+      "speed": 1.0481701126711904
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 168.3831449886398,
+      "latitude": -2.723881685083972,
+      "speed": 7.390316767478893
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 341.65791564614756,
+      "latitude": -1.0317820412880776,
+      "speed": 3.1994577172172756
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 206.53758580473715,
+      "latitude": 0.33774701109090177,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-056",
+   "birth": {
+    "utcDateTime": "2361-07-21T19:27:22.000Z",
+    "latitude": -10.9668,
+    "longitude": -27.4986,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 158.69756058741743,
+    "ayanamsaValue": 24.158376952450073,
+    "houseCusps": [
+     158.69756058741743,
+     196.4443726641359,
+     221.20234894030435,
+     249.89666773230684,
+     285.06390222408,
+     306.9162756931003,
+     338.354740299678,
+     9.155324748688315,
+     40.85099410993661,
+     62.78928588398793,
+     96.3276169251356,
+     133.73220078986787
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 264.0277399219924,
+      "latitude": -2.898529999321895,
+      "speed": -0.9706662495230514
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 263.88536187110316,
+      "latitude": -0.3927109913028364,
+      "speed": 9.197717885582584
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": 2.6306614498024388,
+      "speed": 5.248293598406121
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 120.14760399202501,
+      "latitude": -4.6243646364999025,
+      "speed": -0.4370960384798641
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 56.50721027780813,
+      "latitude": 0.7289112651728091,
+      "speed": 9.273696720893776
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 260.6480929818999,
+      "latitude": 4.194329748022303,
+      "speed": 13.32268677919794
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 120,
+      "latitude": -1.2778508835739224,
+      "speed": 7.438905462489561
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 344.4924885494319,
+      "latitude": -2.126958092191212,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-057",
+   "birth": {
+    "utcDateTime": "1838-12-28T19:44:25.000Z",
+    "latitude": 47.8063,
+    "longitude": 16.5208,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 307.77867738625,
+    "ayanamsaValue": 22.787471900435207,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 242.87624661160885,
+      "latitude": 1.0638215147848822,
+      "speed": 5.962845826189588
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 148.78414492439603,
+      "latitude": 2.366631730861317,
+      "speed": 5.675468720065552
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 116.57965794636769,
+      "latitude": -4.8338863806806,
+      "speed": 11.354159104590034
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 246.81488266605942,
+      "latitude": -3.3367586219180936,
+      "speed": 7.372894350228769
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 222.18908399250725,
+      "latitude": -3.071624477663261,
+      "speed": 2.8887936367203086
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -2.728153011369163,
+      "speed": 12.394857185157832
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 96.18234033573876,
+      "latitude": -0.07496196618034556,
+      "speed": 5.478376635889821
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 4.250924950033756,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-058",
+   "birth": {
+    "utcDateTime": "2008-06-26T08:31:35.000Z",
+    "latitude": -39.0436,
+    "longitude": 67.0309,
+    "ayanamsa": "lahiri",
+    "houseSystem": "placidus",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 263.862403603656,
+    "ayanamsaValue": 25.44882683328029,
+    "houseCusps": [
+     263.862403603656,
+     292.0922999676744,
+     317.8635675612958,
+     357.3578421474919,
+     26.15912606044145,
+     60.93604566494065,
+     80.40792264133114,
+     116.57466274095128,
+     141.37412814219363,
+     171.18081537937235,
+     209.7304176305886,
+     238.21466853695551
+    ],
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 40,
+      "latitude": -0.23818772441150582,
+      "speed": 5.276587484815192
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 275.1796710622735,
+      "latitude": -1.0494332648097968,
+      "speed": 5.752385288631775
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 305.79805902318043,
+      "latitude": 1.581733639674134,
+      "speed": 2.059094892000177
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 63.9170906596423,
+      "latitude": -0.8378110001970906,
+      "speed": 10.620857176586107
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 141.82884934235045,
+      "latitude": 3.0241066672336654,
+      "speed": 12.54186948199615
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 357.00772184522475,
+      "latitude": -2.4401456431297075,
+      "speed": 5.505025303541798
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 190.46352544916505,
+      "latitude": -4.448023635551558,
+      "speed": 12.849134829297506
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 3.3333333333333335,
+      "latitude": 3.7629198664559897,
+      "speed": -0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "case-059",
+   "birth": {
+    "utcDateTime": "2190-06-02T07:34:12.000Z",
+    "latitude": -40.9403,
+    "longitude": 177.0722,
+    "ayanamsa": "lahiri",
+    "houseSystem": "wholeSign",
+    "useTrueNode": false
+   },
+   "raw": {
+    "ascendant": 261.86624528738594,
+    "ayanamsaValue": 22.574207991304352,
+    "houseCusps": null,
+    "bodies": [
+     {
+      "graha": "sun",
+      "siderealLongitude": 42.05250650307855,
+      "latitude": 4.419035396292692,
+      "speed": 4.769849821555343
+     },
+     {
+      "graha": "moon",
+      "siderealLongitude": 245.72021194007016,
+      "latitude": 0.3508949432240991,
+      "speed": 4.260821372875816
+     },
+     {
+      "graha": "mars",
+      "siderealLongitude": 339.87670500717496,
+      "latitude": -3.2636938889341085,
+      "speed": 4.176176766275273
+     },
+     {
+      "graha": "mercury",
+      "siderealLongitude": 181.54435242288952,
+      "latitude": 3.479726358970611,
+      "speed": 4.462809105969996
+     },
+     {
+      "graha": "jupiter",
+      "siderealLongitude": 16.71477131730397,
+      "latitude": 2.4163068878638194,
+      "speed": 5.314606352304775
+     },
+     {
+      "graha": "venus",
+      "siderealLongitude": 13.333333333333334,
+      "latitude": -1.1738484966905718,
+      "speed": 13.925128446843042
+     },
+     {
+      "graha": "saturn",
+      "siderealLongitude": 161.98051153611124,
+      "latitude": 0.7556344488201905,
+      "speed": 9.765916847820801
+     },
+     {
+      "graha": "rahu",
+      "siderealLongitude": 187.87809568247567,
+      "latitude": 3.0716217241209325,
+      "speed": -0.053
+     }
+    ]
+   }
+  }
+ ]
+}
