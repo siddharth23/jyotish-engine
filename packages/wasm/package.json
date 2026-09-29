@@ -1,6 +1,6 @@
 {
   "name": "@jyotish/engine-wasm",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Sidereal (Vedic) astrological calculations via a WebAssembly build of Swiss Ephemeris. Browser only.",
   "license": "AGPL-3.0-only",
   "repository": {
@@ -12,18 +12,29 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "browser": "dist/index.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node scripts/copy-native.mjs",
     "test": "npm run build && node --test test/*.test.js",
+    "test:browser": "npm run build && node test/browser/run.mjs",
     "lint": "tsc --noEmit -p tsconfig.json"
   },
   "devDependencies": {
-    "typescript": "^7.0.2",
-    "@types/node": "^26.1.2"
+    "@types/node": "^26.1.2",
+    "playwright-core": "^1.63.0",
+    "typescript": "^7.0.2"
   },
-  "keywords": ["astrology", "vedic", "jyotish", "swiss-ephemeris", "wasm"]
+  "keywords": [
+    "astrology",
+    "vedic",
+    "jyotish",
+    "swiss-ephemeris",
+    "wasm"
+  ]
 }
