@@ -1,0 +1,52 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>jyotish-engine browser harness</title>
+<pre id="out">running</pre>
+<script type="module">
+  import { loadEngine, ENGINE_VERSION } from '../../dist/index.js';
+  const out = document.getElementById('out');
+  try {
+    const engine = await loadEngine();
+    const birth = { utcDateTime: '2000-01-01T12:00:00Z', latitude: 52.52, longitude: 13.405 };
+    const chart = engine.computeChart(birth);
+    const repeat = engine.computeChart(birth);
+    let outOfRange = '';
+    try { engine.computeChart({ ...birth, utcDateTime: '1799-12-31T00:00:00Z' }); } catch (e) { outOfRange = String(e.message); }
+    const placidus = engine.computeChart({ ...birth, houseSystem: 'placidus' });
+    const transits = engine.computeTransits('2026-09-16T12:00:00Z', chart);
+    const result = {
+      version: ENGINE_VERSION,
+      chart,
+      repeatIdentical: JSON.stringify(chart) === JSON.stringify(repeat),
+      dashas: engine.computeDashas(chart, 1),
+      panchang: engine.computePanchang('2026-06-21T10:00:00Z', 52.52, 13.405),
+      polarPanchang: engine.computePanchang('2026-06-21T10:00:00Z', 69.6496, 18.956),
+      outOfRange,
+      placidusCusps: placidus.houseCusps.length,
+      transitAscendant: transits.ascendant,
+    };
+    engine.dispose();
+
+    // The worker entry point must answer the same question identically.
+    const worker = new Worker('../../dist/worker.js', { type: 'module' });
+    const call = (id, method, args) => new Promise((resolve, reject) => {
+      const listener = ({ data }) => {
+        if (data.id !== id) return;
+        worker.removeEventListener('message', listener);
+        data.error ? reject(new Error(data.error)) : resolve(data.result);
+      };
+      worker.addEventListener('message', listener);
+      if (id !== 0) worker.postMessage({ id, method, args });
+    });
+    await call(0);
+    const viaWorker = await call(1, 'computeChart', [birth]);
+    result.workerIdentical = JSON.stringify(viaWorker) === JSON.stringify(chart);
+    worker.terminate();
+
+    window.__result = result;
+    out.textContent = JSON.stringify(result, null, 2);
+  } catch (error) {
+    window.__error = String((error && error.stack) || error);
+    out.textContent = window.__error;
+  }
+</script>
