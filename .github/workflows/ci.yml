@@ -45,7 +45,7 @@ jobs:
           dart_version=$(sed -n "s/^const String engineVersion = '\(.*\)';$/\1/p" \
             packages/dart/lib/src/version.dart)
           wasm_version=$(sed -n "s/^export const ENGINE_VERSION = '\(.*\)';$/\1/p" \
-            packages/wasm/src/index.ts)
+            packages/wasm/src/version.ts)
           echo "dart: ${dart_version:-<unparsed>}"
           echo "wasm: ${wasm_version:-<unparsed>}"
           if [ -z "$dart_version" ] || [ -z "$wasm_version" ]; then
@@ -93,6 +93,13 @@ jobs:
       - name: Test
         working-directory: packages/dart
         run: dart test
+      - name: Parity fixtures are current
+        working-directory: packages/dart
+        run: |
+          # packages/wasm is checked against this output. Regenerating it must be a
+          # no-op, or the reference changed without the port being checked against it.
+          dart run tool/derive.dart > ../../test/parity/dart_output.json
+          git diff --exit-code -- ../../test/parity/dart_output.json
 
   wasm:
     name: WASM wrapper
@@ -108,9 +115,19 @@ jobs:
       - name: Lint
         working-directory: packages/wasm
         run: npm run lint --if-present
-      - name: Test
+      - uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 4.0.10
+      - name: Fetch Swiss Ephemeris
+        run: ./native/fetch_swisseph.sh
+      - name: Build WebAssembly module
+        run: ./native/build_wasm.sh
+      - name: Test derivation and Dart parity
         working-directory: packages/wasm
-        run: npm test --if-present
+        run: npm test
+      - name: Test the WebAssembly engine in headless Chrome
+        working-directory: packages/wasm
+        run: npm run test:browser
 
   vectors:
     name: Reference vectors are well-formed
@@ -123,13 +140,6 @@ jobs:
       - name: Validate vector file
         run: python3 test/validate_vectors.py
 
-  # Enabled once the native build pipeline lands. Cross-platform equality between
-  # the Dart and WASM builds is the single most important guarantee this package makes.
-  # cross-platform-equality:
-  #   name: Dart and WASM produce identical output
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v7
-  #     - run: ./native/fetch_swisseph.sh
-  #     - run: ./native/build_wasm.sh
-  #     - run: ./scripts/compare_outputs.sh
+  # The derivation half is checked for Dart/TypeScript equality by the parity fixtures
+  # above. There is no FFI build yet, so the ephemeris half is only checked in the
+  # browser; a Dart FFI comparison belongs here once one exists.
