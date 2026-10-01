@@ -115,7 +115,7 @@ jobs:
       - name: Lint
         working-directory: packages/wasm
         run: npm run lint --if-present
-      - uses: mymindstorm/setup-emsdk@v14
+      - uses: mymindstorm/setup-emsdk@v16
         with:
           version: 4.0.10
       - name: Fetch Swiss Ephemeris
