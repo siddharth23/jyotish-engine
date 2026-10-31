@@ -5,13 +5,19 @@ import { dartMod, normaliseDegrees, angularSeparation } from '../dist/derivation
 import { rasiFromLongitude, rasiLord, rasiIsOdd } from '../dist/derivation/rasi.js';
 import { nakshatraFromLongitude, nakshatraLord, padaOfLongitude } from '../dist/derivation/nakshatra.js';
 import { dignityOf, isCombust } from '../dist/derivation/dignity.js';
-import { vargaSign } from '../dist/derivation/divisional.js';
+import {
+  VARGA_DIVISIONS,
+  vargaHasEqualDivisions,
+  vargaLongitude,
+  vargaSign,
+} from '../dist/derivation/divisional.js';
 import { houseOfLongitude, wholeSignCusps } from '../dist/derivation/houses.js';
 import { assembleChart, computeDivisionalChart } from '../dist/derivation/chart.js';
 import { computeVimshottariDashas, activeDashaChain } from '../dist/derivation/vimshottari.js';
 import { tithiOf, karanaOf, yogaOf } from '../dist/derivation/panchang.js';
 import { evaluateRules } from '../dist/derivation/rules.js';
 import { formatUtcMicros, parseUtcMicros } from '../dist/derivation/time.js';
+import { VARGAS } from '../dist/derivation/types.js';
 
 const SPAN = 360 / 27;
 
@@ -71,6 +77,90 @@ test('varga starting rules', () => {
   assert.equal(vargaSign(31, 'd2'), 3);
   // D3: the sign, the 5th and the 9th.
   assert.equal(vargaSign(25, 'd3'), 8);
+  // D4: the sign and the three kendras from it.
+  assert.equal(vargaSign(3, 'd4'), 0);
+  assert.equal(vargaSign(10, 'd4'), 3);
+  assert.equal(vargaSign(20, 'd4'), 6);
+  assert.equal(vargaSign(28, 'd4'), 9);
+  // D16 and D45: movable Mesha, fixed Simha, dual Dhanu.
+  assert.equal(vargaSign(1, 'd16'), 0);
+  assert.equal(vargaSign(31, 'd16'), 4);
+  assert.equal(vargaSign(61, 'd16'), 8);
+  assert.equal(vargaSign(0.5, 'd45'), 0);
+  assert.equal(vargaSign(30.5, 'd45'), 4);
+  assert.equal(vargaSign(60.5, 'd45'), 8);
+  // D20: movable Mesha, fixed Dhanu, dual Simha.
+  assert.equal(vargaSign(1, 'd20'), 0);
+  assert.equal(vargaSign(31, 'd20'), 8);
+  assert.equal(vargaSign(61, 'd20'), 4);
+  // D24: odd signs from Simha, even from Karka.
+  assert.equal(vargaSign(1, 'd24'), 4);
+  assert.equal(vargaSign(31, 'd24'), 3);
+  // D27: by element, which cycles every four signs.
+  assert.equal(vargaSign(0.5, 'd27'), 0);
+  assert.equal(vargaSign(30.5, 'd27'), 3);
+  assert.equal(vargaSign(60.5, 'd27'), 6);
+  assert.equal(vargaSign(90.5, 'd27'), 9);
+  assert.equal(vargaSign(120.5, 'd27'), 0);
+  // D40: odd signs from Mesha, even from Tula.
+  assert.equal(vargaSign(0.5, 'd40'), 0);
+  assert.equal(vargaSign(30.5, 'd40'), 6);
+  // D60: from the sign itself, wrapping the zodiac every 6 degrees.
+  assert.equal(vargaSign(0.25, 'd60'), 0);
+  assert.equal(vargaSign(0.75, 'd60'), 1);
+  assert.equal(vargaSign(6.25, 'd60'), 0);
+});
+
+test('the trimshamsa divides a sign unequally', () => {
+  // Mars 5, Saturn 5, Jupiter 8, Mercury 7, Venus 5 degrees in an odd sign.
+  assert.equal(vargaSign(3, 'd30'), 0);
+  assert.equal(vargaSign(7, 'd30'), 10);
+  assert.equal(vargaSign(15, 'd30'), 8);
+  assert.equal(vargaSign(20, 'd30'), 2);
+  assert.equal(vargaSign(27, 'd30'), 6);
+  // An even sign reverses the five rulers: 5, 7, 8, 5, 5.
+  assert.equal(vargaSign(33, 'd30'), 1);
+  assert.equal(vargaSign(38, 'd30'), 5);
+  assert.equal(vargaSign(45, 'd30'), 11);
+  assert.equal(vargaSign(52, 'd30'), 9);
+  assert.equal(vargaSign(57, 'd30'), 7);
+  // A part boundary belongs to the part above it.
+  assert.equal(vargaSign(5, 'd30'), 10);
+  assert.equal(vargaSign(10, 'd30'), 8);
+  assert.equal(vargaSign(42, 'd30'), 11);
+  assert.equal(vargaHasEqualDivisions('d30'), false);
+});
+
+test('the trimshamsa never produces Karka or Simha', () => {
+  // Only the five tara grahas rule trimshamsas, so the Sun's and Moon's signs
+  // can never appear. A rule table typo shows up here.
+  for (let tenth = 0; tenth < 3600; tenth += 1) {
+    const sign = vargaSign(tenth / 10, 'd30');
+    assert.ok(sign !== 3 && sign !== 4, `Karka or Simha at ${tenth / 10} degrees`);
+  }
+});
+
+test('the scaled varga longitude stays inside the sign the varga selected', () => {
+  // Guards the D30 branch in particular: its parts are 5, 7 or 8 degrees wide,
+  // so scaling against a uniform span would push values into the wrong sign.
+  for (const varga of VARGAS) {
+    for (let tenth = 0; tenth < 3600; tenth += 7) {
+      const source = tenth / 10;
+      assert.equal(
+        Math.floor(vargaLongitude(source, varga) / 30),
+        vargaSign(source, varga),
+        `${varga} at ${source} degrees`,
+      );
+    }
+  }
+});
+
+test('the Shodashavarga has exactly sixteen members', () => {
+  assert.equal(VARGAS.length, 16);
+  assert.deepEqual(
+    VARGAS.map((v) => VARGA_DIVISIONS[v]),
+    [1, 2, 3, 4, 7, 9, 10, 12, 16, 20, 24, 27, 30, 40, 45, 60],
+  );
 });
 
 test('houses wrap around Pisces', () => {

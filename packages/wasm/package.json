@@ -1,6 +1,6 @@
 {
   "name": "@jyotish/engine-wasm",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Sidereal (Vedic) astrological calculations via a WebAssembly build of Swiss Ephemeris. Browser only.",
   "license": "AGPL-3.0-only",
   "repository": {

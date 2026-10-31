@@ -142,10 +142,11 @@ python3 test/validate_vectors.py
 
 The engine splits into two halves at `RawEphemeris`, and only one of them exists.
 
-**Derivation half — implemented and tested in Dart.** Everything downstream of raw longitudes:
-signs, nakshatras and padas, dignity, combustion, whole-sign and equal houses, the seven vargas,
-the full Vimshottari tree, and tithi/yoga/karana. Pure arithmetic, no native code, 170 tests.
-`assembleChart(BirthData, RawEphemeris)` is the entry point.
+**Derivation half — implemented and tested in Dart, and ported to TypeScript.** Everything
+downstream of raw longitudes: signs, nakshatras and padas, dignity, combustion, whole-sign and
+equal houses, the sixteen vargas of the Shodashavarga, the full Vimshottari tree, and
+tithi/yoga/karana. Pure arithmetic, no native code. 191 tests in Dart, 81 in the WASM package.
+`assembleChart(BirthData, RawEphemeris)` is the entry point in both.
 
 **Ephemeris half — not started.** Planetary longitudes, the ayanamsa value, the ascendant, quadrant
 cusps, and sunrise/sunset all still have to come from Swiss Ephemeris. `fetch_swisseph.sh` and the
@@ -153,9 +154,13 @@ three build scripts are stubs with documented TODOs, so nothing can produce a re
 `JyotishEngine` interface has no implementation: an FFI class will implement it by calling Swiss
 Ephemeris to fill a `RawEphemeris` and handing that to the assembler.
 
-**The WASM package is still empty.** The derivation half exists only in Dart. Cross-platform
-equality is not merely unverified, it is currently impossible — the TypeScript side has nothing to
-compare against. Porting the derivation layer, or compiling the Dart to JS, is an open decision.
+**The WASM package carries a hand-written port of the derivation half.** Dart is the reference
+implementation; `packages/wasm/src/derivation/` mirrors it, down to reproducing Dart's Euclidean
+`%` via `dartMod` so negative operands cannot diverge. `test/parity/dart_output.json` is generated
+by `packages/dart/tool/derive.dart` and the port is asserted against it case by case; CI
+regenerates the fixture and fails if it moves. Cross-platform equality is therefore enforced for
+the derivation layer — but only for the derivation layer, since both halves start from the same
+synthetic `RawEphemeris` rather than from Swiss Ephemeris.
 
 The remaining first task is unchanged: get Swiss Ephemeris compiling for all targets and prove FFI
 and WASM agree on the test vectors. All seven vectors still have `verifiedAgainst: null`.

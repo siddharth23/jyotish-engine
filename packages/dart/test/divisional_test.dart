@@ -111,7 +111,158 @@ void main() {
     });
   });
 
+  group('Chaturthamsa (D4)', () {
+    test('the four parts fall in the sign and the three kendras from it', () {
+      expect(vargaSign(at(Rasi.mesha, 3), Varga.d4), Rasi.mesha);
+      expect(vargaSign(at(Rasi.mesha, 10), Varga.d4), Rasi.karka);
+      expect(vargaSign(at(Rasi.mesha, 20), Varga.d4), Rasi.tula);
+      expect(vargaSign(at(Rasi.mesha, 28), Varga.d4), Rasi.makara);
+    });
+
+    test('holds for a sign other than the first', () {
+      expect(vargaSign(at(Rasi.vrishchika, 3), Varga.d4), Rasi.vrishchika);
+      expect(vargaSign(at(Rasi.vrishchika, 28), Varga.d4), Rasi.simha);
+    });
+  });
+
+  group('Shodashamsa (D16)', () {
+    test('starts from Mesha, Simha or Dhanu by modality', () {
+      expect(vargaSign(at(Rasi.mesha, 1), Varga.d16), Rasi.mesha);
+      expect(vargaSign(at(Rasi.vrishabha, 1), Varga.d16), Rasi.simha);
+      expect(vargaSign(at(Rasi.mithuna, 1), Varga.d16), Rasi.dhanu);
+    });
+
+    test('advances one sign per 1 degree 52.5 minutes', () {
+      expect(vargaSign(at(Rasi.mesha, 2), Varga.d16), Rasi.vrishabha);
+    });
+  });
+
+  group('Vimshamsa (D20)', () {
+    test('starts from Mesha, Dhanu or Simha by modality', () {
+      expect(vargaSign(at(Rasi.mesha, 1), Varga.d20), Rasi.mesha);
+      expect(vargaSign(at(Rasi.vrishabha, 1), Varga.d20), Rasi.dhanu);
+      expect(vargaSign(at(Rasi.mithuna, 1), Varga.d20), Rasi.simha);
+    });
+
+    test('advances one sign per 1 degree 30 minutes', () {
+      expect(vargaSign(at(Rasi.mesha, 2), Varga.d20), Rasi.vrishabha);
+    });
+  });
+
+  group('Siddhamsa (D24)', () {
+    test('odd signs start from Simha, even signs from Karka', () {
+      expect(vargaSign(at(Rasi.mesha, 1), Varga.d24), Rasi.simha);
+      expect(vargaSign(at(Rasi.vrishabha, 1), Varga.d24), Rasi.karka);
+    });
+
+    test('advances one sign per 1 degree 15 minutes', () {
+      expect(vargaSign(at(Rasi.mesha, 2), Varga.d24), Rasi.kanya);
+      expect(vargaSign(at(Rasi.vrishabha, 2), Varga.d24), Rasi.simha);
+    });
+  });
+
+  group('Bhamsa (D27)', () {
+    // The starting sign follows the element, which cycles every four signs.
+    test('fiery signs start from Mesha', () {
+      expect(vargaSign(at(Rasi.mesha, 0.5), Varga.d27), Rasi.mesha);
+      expect(vargaSign(at(Rasi.simha, 0.5), Varga.d27), Rasi.mesha);
+      expect(vargaSign(at(Rasi.dhanu, 0.5), Varga.d27), Rasi.mesha);
+    });
+
+    test('earthy from Karka, airy from Tula, watery from Makara', () {
+      expect(vargaSign(at(Rasi.vrishabha, 0.5), Varga.d27), Rasi.karka);
+      expect(vargaSign(at(Rasi.mithuna, 0.5), Varga.d27), Rasi.tula);
+      expect(vargaSign(at(Rasi.karka, 0.5), Varga.d27), Rasi.makara);
+    });
+  });
+
+  group('Trimshamsa (D30)', () {
+    // The one varga with unequal parts: Mars 5, Saturn 5, Jupiter 8, Mercury 7
+    // and Venus 5 degrees in an odd sign, the same five reversed in an even one.
+    test('an odd sign runs Mars, Saturn, Jupiter, Mercury, Venus', () {
+      expect(vargaSign(at(Rasi.mesha, 3), Varga.d30), Rasi.mesha);
+      expect(vargaSign(at(Rasi.mesha, 7), Varga.d30), Rasi.kumbha);
+      expect(vargaSign(at(Rasi.mesha, 15), Varga.d30), Rasi.dhanu);
+      expect(vargaSign(at(Rasi.mesha, 20), Varga.d30), Rasi.mithuna);
+      expect(vargaSign(at(Rasi.mesha, 27), Varga.d30), Rasi.tula);
+    });
+
+    test('an even sign reverses that order', () {
+      expect(vargaSign(at(Rasi.vrishabha, 3), Varga.d30), Rasi.vrishabha);
+      expect(vargaSign(at(Rasi.vrishabha, 8), Varga.d30), Rasi.kanya);
+      expect(vargaSign(at(Rasi.vrishabha, 15), Varga.d30), Rasi.meena);
+      expect(vargaSign(at(Rasi.vrishabha, 22), Varga.d30), Rasi.makara);
+      expect(vargaSign(at(Rasi.vrishabha, 27), Varga.d30), Rasi.vrishchika);
+    });
+
+    test('a part boundary belongs to the part above it', () {
+      expect(vargaSign(at(Rasi.mesha, 5), Varga.d30), Rasi.kumbha);
+      expect(vargaSign(at(Rasi.mesha, 10), Varga.d30), Rasi.dhanu);
+      expect(vargaSign(at(Rasi.vrishabha, 12), Varga.d30), Rasi.meena);
+    });
+
+    test('never produces Karka or Simha', () {
+      // Only the five tara grahas rule trimshamsas; the Sun and Moon rule none,
+      // so their signs can never appear. A rule table typo would show up here.
+      for (var tenth = 0; tenth < 3600; tenth++) {
+        expect(
+          vargaSign(tenth / 10, Varga.d30),
+          isNot(anyOf(Rasi.karka, Rasi.simha)),
+          reason: 'at ${tenth / 10} degrees',
+        );
+      }
+    });
+
+    test('reports unequal divisions, unlike every other varga', () {
+      expect(Varga.d30.hasEqualDivisions, isFalse);
+      for (final varga in Varga.values.where((v) => v != Varga.d30)) {
+        expect(varga.hasEqualDivisions, isTrue, reason: varga.name);
+      }
+    });
+  });
+
+  group('Khavedamsa (D40)', () {
+    test('odd signs start from Mesha, even signs from Tula', () {
+      expect(vargaSign(at(Rasi.mesha, 0.5), Varga.d40), Rasi.mesha);
+      expect(vargaSign(at(Rasi.vrishabha, 0.5), Varga.d40), Rasi.tula);
+    });
+
+    test('advances one sign per 45 minutes', () {
+      expect(vargaSign(at(Rasi.mesha, 1), Varga.d40), Rasi.vrishabha);
+    });
+  });
+
+  group('Akshavedamsa (D45)', () {
+    test('starts from Mesha, Simha or Dhanu by modality', () {
+      expect(vargaSign(at(Rasi.mesha, 0.5), Varga.d45), Rasi.mesha);
+      expect(vargaSign(at(Rasi.vrishabha, 0.5), Varga.d45), Rasi.simha);
+      expect(vargaSign(at(Rasi.mithuna, 0.5), Varga.d45), Rasi.dhanu);
+    });
+  });
+
+  group('Shashtiamsa (D60)', () {
+    test('every sign starts from itself, advancing per 30 minutes', () {
+      expect(vargaSign(at(Rasi.mesha, 0.25), Varga.d60), Rasi.mesha);
+      expect(vargaSign(at(Rasi.mesha, 0.75), Varga.d60), Rasi.vrishabha);
+      expect(vargaSign(at(Rasi.vrishchika, 0.25), Varga.d60), Rasi.vrishchika);
+    });
+
+    test('wraps the full zodiac every 6 degrees', () {
+      expect(vargaSign(at(Rasi.mesha, 6.25), Varga.d60), Rasi.mesha);
+    });
+  });
+
   group('Varga invariants', () {
+    test('the Shodashavarga has exactly sixteen members', () {
+      // Brihat Parashara Hora Shastra ch. 6. Adding a seventeenth would mean a
+      // non-classical division had been introduced.
+      expect(Varga.values.length, 16);
+      expect(
+        Varga.values.map((v) => v.divisions).toList(),
+        [1, 2, 3, 4, 7, 9, 10, 12, 16, 20, 24, 27, 30, 40, 45, 60],
+      );
+    });
+
     test('D1 is the identity mapping', () {
       for (var degree = 0; degree < 360; degree++) {
         expect(

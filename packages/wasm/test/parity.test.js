@@ -27,6 +27,8 @@ for (const [index, c] of cases.entries()) {
     assert.deepEqual(JSON.parse(JSON.stringify(chart)), expected.d1);
     assert.deepEqual(JSON.parse(JSON.stringify(computeDivisionalChart(chart, 'd9'))), expected.d9);
     assert.deepEqual(JSON.parse(JSON.stringify(computeDivisionalChart(chart, 'd10'))), expected.d10);
+    assert.deepEqual(JSON.parse(JSON.stringify(computeDivisionalChart(chart, 'd30'))), expected.d30);
+    assert.deepEqual(JSON.parse(JSON.stringify(computeDivisionalChart(chart, 'd60'))), expected.d60);
     const dashas = computeVimshottariDashas(chart.positions.moon.siderealLongitude, birth.utcDateTime, 2).slice(0, 3);
     assert.deepEqual(dashas, expected.dashas);
   });
