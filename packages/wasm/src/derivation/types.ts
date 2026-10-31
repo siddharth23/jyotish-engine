@@ -10,7 +10,10 @@ export type HouseSystem = 'wholeSign' | 'equal' | 'placidus' | 'koch';
 export type Dignity =
   | 'exalted' | 'ownSign' | 'friendly' | 'neutral' | 'inimical' | 'debilitated';
 
-export const VARGAS = ['d1', 'd2', 'd3', 'd7', 'd9', 'd10', 'd12'] as const;
+export const VARGAS = [
+  'd1', 'd2', 'd3', 'd4', 'd7', 'd9', 'd10', 'd12',
+  'd16', 'd20', 'd24', 'd27', 'd30', 'd40', 'd45', 'd60',
+] as const;
 export type Varga = (typeof VARGAS)[number];
 
 export interface BirthData {

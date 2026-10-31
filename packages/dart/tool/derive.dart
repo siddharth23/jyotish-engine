@@ -50,6 +50,10 @@ void main() {
       'd1': chart.toJson(),
       'd9': computeDivisionalChart(chart, Varga.d9).toJson(),
       'd10': computeDivisionalChart(chart, Varga.d10).toJson(),
+      // D30 is the only varga with unequal parts and D60 the finest
+      // division, so they are the two most likely to drift between ports.
+      'd30': computeDivisionalChart(chart, Varga.d30).toJson(),
+      'd60': computeDivisionalChart(chart, Varga.d60).toJson(),
       'dashas': [
         for (final p in computeVimshottariDashas(
           moonSiderealLongitude: chart.positions[Graha.moon]!.siderealLongitude,
